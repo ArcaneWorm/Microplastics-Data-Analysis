@@ -1,420 +1,335 @@
-Sample_ID,Location,Countries,Source,Concentration,Concentration_Units
-1|10.1016/j.watres.2017.11.011,Germany,Germany,bottled water,14.0,particles/L
-2|10.1016/j.watres.2017.11.011,Germany,Germany,bottled water,118.0,particles/L
-3|10.1016/j.watres.2017.11.011,Germany,Germany,bottled water,50.0,particles/L
-4|10.1016/j.watres.2017.11.011,Germany,Germany,bottled water,11.0,particles/L
-2|10.1039/c6ay01184e,Germany,Germany,bottled water,1.0,particles/L
-IB|101119.10.3389/fchem.2018.00407,"Jakarta, Indonesia",Indonesia,bottled water,37.1,particles/L
-BB 311019 08: 11 PSRL6|10.3389/fchem.2018.00407,"Bali, Indonesia",Indonesia,bottled water,705.0,particles/L
-BB 311019 09: 50 STB1|10.3389/fchem.2018.00407,"Medan, Indonesia",Indonesia,bottled water,404.0,particles/L
-BN7141A04117|10.3389/fchem.2018.00407,"Chennai, India",India,bottled water,174.0,particles/L
-HE.B.No 229 (BM/AS)|10.3389/fchem.2018.00407,"Chennai, India",India,bottled water,826.0,particles/L
-MU.N.No.298 (MA/AD)|10.3389/fchem.2018.00407,"Mumbai, India",India,bottled water,213.0,particles/L
-SO.B No.087 (AS/LB)|10.3389/fchem.2018.00407,"New Delhi, India",India,bottled water,3.72,particles/L
-P18NOV17CG3|10.3389/fchem.2018.00407,"Nairobi, Kenya",Kenya,bottled water,74.6,particles/L
-17.11.18|10.3389/fchem.2018.00407,"Mexico City, Mexico",Mexico,bottled water,686.0,particles/L
-14.10.18|10.3389/fchem.2018.00407,"Tijuana, Mexico",Mexico,bottled water,20.0,particles/L
-09.08.18|10.3389/fchem.2018.00407,"Reynosa, Mexico",Mexico,bottled water,37.3,particles/L
-PRD 05 24 17 11:29|10.3389/fchem.2018.00407,"Fredonia, NY, USA",USA,bottled water,58.2,particles/L
-07.142018 2|10.3389/fchem.2018.00407,"Fredonia, NY, USA",USA,bottled water,1410.0,particles/L
-FAB: 211017 09:06SP|10.3389/fchem.2018.00407,"Sao Paulo, Brazil",Brazil,bottled water,40.1,particles/L
-FAB: 160817 15:05SP|10.3389/fchem.2018.00407,"Aparecida de Goiania, Brazil",Brazil,bottled water,12.5,particles/L
-FAB: 091217 16:53SP|10.3389/fchem.2018.00407,"Rio de Janerio, Brazil",Brazil,bottled water,150.0,particles/L
-P: 4/11/17 03:34 AZ|10.3389/fchem.2018.00407,"Beirut, Lebanon",Lebanon,bottled water,49.3,particles/L
-730805210A 23:28|10.3389/fchem.2018.00407,"Bangkok, Thailand",Thailand,bottled water,468.0,particles/L
-20171102 1214JN|10.3389/fchem.2018.00407,"Jinan, China",China,bottled water,156.0,particles/L
-20171021 3214GH|10.3389/fchem.2018.00407,"Beijing, China",China,bottled water,66.7,particles/L
-20171103 2106WF|10.3389/fchem.2018.00407,"Qingdao, China",China,bottled water,67.1,particles/L
-Tap Water_Cuba|10.1371/journal.pone.0194970,"Havana, Cuba",Cuba,tap water,7.17,particles/L
-Tap Water_Ecuador|10.1371/journal.pone.0194970,"Quito, Ecuador",Ecuador,tap water,4.02,particles/L
-Tap Water_England|10.1371/journal.pone.0194970,"London, England",England,tap water,7.73,particles/L
-Tap Water_France|10.1371/journal.pone.0194970,"Paris, France",France,tap water,1.82,particles/L
-Tap Water_Germany|10.1371/journal.pone.0194970,"Berlin, Germany; Tubingen, Germany",Germany,tap water,0.91,particles/L
-Tap Water_India|10.1371/journal.pone.0194970,"Ner Delhi, India",India,tap water,6.24,particles/L
-Tap Water_Indonesia|10.1371/journal.pone.0194970,"Depok City, Indonesia; Desa Puspanegara, Indonesia; Jakarta, Indonesia; Jatirahayu, Indonesia; Kedaung, Indonesia; Menteng, Indonesia; North Paninggilan, Indonesia; Pasireurih, Indonesia; South Tangerang City, Indonesia; Sukatani, Indonesia; Teluknaga, Indonesia; Warnasari, Indonesia",Indonesia,tap water,3.23,particles/L
-Tap Water_Ireland|10.1371/journal.pone.0194970,"Dublin, Ireland",Ireland,tap water,1.83,particles/L
-Tap Water_Italy|10.1371/journal.pone.0194970,"Pavia, Italy",Italy,tap water,0.0,particles/L
-Tap Water_Lebanon|10.1371/journal.pone.0194970,"Beirut, Lebanon; Burj el Brajneh, Lebanon; Choueifat, Lebanon; Ghobayreh, Lebanon; Khaldeh, Lebanon; Mreijeh, Lebanon",Lebanon,tap water,6.64,particles/L
-Tap Water_Slovakia|10.1371/journal.pone.0194970,"Brezova pod Bradlom, Slovakia; Kocvce, Slovakia; Piestany, Slovakia; Poprad, Slovakia; Prasnik, Slovakia; Radosina, Slovakia; Ruzomberok, Slovakia",Slovakia,tap water,3.83,particles/L
-Tap Water_Switzerland|10.1371/journal.pone.0194970,"Davos Platz, Switzerland; Gerbertingen, Switzerland",Switzerland,tap water,2.74,particles/L
-Tap Water_Uganda|10.1371/journal.pone.0194970,"Jinja, Uganda; Kampala, Uganda",Uganda,tap water,3.92,particles/L
-Tap Water_USA|10.1371/journal.pone.0194970,"Alpena, USA; Buffalo, USA; Chicago, USA; Clayton, USA; Duluth, USA; Glenview, USA; Holland, USA; Lawrence, USA; Los Angeles, USA; Louisville, USA; Mahopack, USA; Middle Village, USA; New York City, USA; Overland Park, USA; Palmetto Bay, USA; Pinebluff, USA; Spring, USA; Washington DC, USA; Wauwatosa, USA",USA,tap water,9.24,particles/L
-Bottled Water|10.1371/journal.pone.0194970,USA,USA,bottled water,3.57,particles/L
-Lake Superior 1|10.1371/journal.pone.0194970,Lake Superior,USA,bottled water,0.67,particles/L
-Lake Superior 2|10.1371/journal.pone.0194970,Lake Superior,USA,bottled water,4.33,particles/L
-Lake Superior 3|10.1371/journal.pone.0194970,Lake Superior,USA,bottled water,3.33,particles/L
-Lake Michigan 1|10.1371/journal.pone.0194970,Lake Michigan,USA,bottled water,1.33,particles/L
-Lake Michigan 2|10.1371/journal.pone.0194970,Lake Michigan,USA,bottled water,0.0,particles/L
-Lake Michigan 3|10.1371/journal.pone.0194970,Lake Michigan,USA,bottled water,14.3,particles/L
-Lake Michigan 4|10.1371/journal.pone.0194970,Lake Michigan,USA,bottled water,2.33,particles/L
-Lake Huron 1|10.1371/journal.pone.0194970,Lake Huron,USA,bottled water,1.33,particles/L
-Lake Erie 1|10.1371/journal.pone.0194970,Lake Erie,USA,bottled water,2.0,particles/L
-Lake Erie 2|10.1371/journal.pone.0194970,Lake Erie,USA,bottled water,3.0,particles/L
-Lake Ontario 1|10.1371/journal.pone.0194970,Lake Ontario,USA,bottled water,8.0,particles/L
-Lake Ontario 2|10.1371/journal.pone.0194970,Lake Ontario,USA,bottled water,8.0,particles/L
-Nethen.1|10.1016/j.sciotenv.2018.08.178,"Nethen, Belgium",Belgium,tap water,0.003,particles/L
-Nethen.2|10.1016/j.sciotenv.2018.08.178,"Nethen, Belgium",Belgium,tap water,0.0,particles/L
-Nethen.3|10.1016/j.sciotenv.2018.08.178,"Nethen, Belgium",Belgium,tap water,0.001,particles/L
-Nethen.4|10.1016/j.sciotenv.2018.08.178,"Nethen, Belgium",Belgium,tap water,0.0,particles/L
-Holdorf.1a|10.1016/j.sciotenv.2018.08.178,"Holdorf, Germany",Germany,tap water,0.007,particles/L
-Holdorf.1b|10.1016/j.sciotenv.2018.08.178,"Holdorf, Germany",Germany,tap water,0.0,particles/L
-Holdorf.2|10.1016/j.sciotenv.2018.08.178,"Holdorf, Germany",Germany,tap water,0.001,particles/L
-Holdorf.3|10.1016/j.sciotenv.2018.08.178,"Holdorf, Germany",Germany,tap water,0.003,particles/L
-Holdorf.4|10.1016/j.sciotenv.2018.08.178,"Holdorf, Germany",Germany,tap water,0.0,particles/L
-Grossenkneten.1|10.1016/j.sciotenv.2018.08.178,"Grossenkneten, Germany",Germany,tap water,0.0,particles/L
-Grossenkneten.2|10.1016/j.sciotenv.2018.08.178,"Grossenkneten, Germany",Germany,tap water,0.0,particles/L
-Grossenkneten.3|10.1016/j.sciotenv.2018.08.178,"Grossenkneten, Germany",Germany,tap water,0.0,particles/L
-Grossenkneten.4|10.1016/j.sciotenv.2018.08.178,"Grossenkneten, Germany",Germany,tap water,0.0,particles/L
-Sandelermoens.1|10.1016/j.sciotenv.2018.08.178,"Sandelermoens, Germany",Germany,tap water,0.0,particles/L
-Sandelermoens.2|10.1016/j.sciotenv.2018.08.178,"Sandelermoens, Germany",Germany,tap water,0.001,particles/L
-Sandelermoens.3|10.1016/j.sciotenv.2018.08.178,"Sandelermoens, Germany",Germany,tap water,0.001,particles/L
-Sandelermoens.4|10.1016/j.sciotenv.2018.08.178,"Sandelermoens, Germany",Germany,tap water,0.0,particles/L
-Thuelsfelde.1|10.1016/j.sciotenv.2018.08.178,"Thuelsfelde, Germany",Germany,tap water,0.0,particles/L
-Thuelsfelde.2|10.1016/j.sciotenv.2018.08.178,"Thuelsfelde, Germany",Germany,tap water,0.001,particles/L
-Thuelsfelde.3|10.1016/j.sciotenv.2018.08.178,"Thuelsfelde, Germany",Germany,tap water,0.001,particles/L
-Thuelsfelde.4|10.1016/j.sciotenv.2018.08.178,"Thuelsfelde, Germany",Germany,tap water,0.0,particles/L
-Holdorf.Well 1|10.1016/j.sciotenv.2018.08.178,"Holdorf, Germany",Germany,tap water,0.002,particles/L
-Holdorf.Well 2|10.1016/j.sciotenv.2018.08.178,"Holdorf, Germany",Germany,tap water,0.0,particles/L
-Holdorf.Well 3|10.1016/j.sciotenv.2018.08.178,"Holdorf, Germany",Germany,tap water,0.0,particles/L
-Mineral Water.1|10.1016/j.sciotenv.2018.08.178,Czech Republic,Czech Republic,bottled water,2649.0,particles/L
-Mineral Water.2|10.1016/j.sciotenv.2018.08.178,Czech Republic,Czech Republic,bottled water,4889.0,particles/L
-Mineral Water.3|10.1016/j.sciotenv.2018.08.178,Czech Republic,Czech Republic,bottled water,6292.0,particles/L
-WTP1_Treated|10.1016/j.sciotenv.2018.08.178,Czech Republic,Czech Republic,tap water,443.0,particles/L
-WTP2_Treated|10.1016/j.sciotenv.2018.08.178,Czech Republic,Czech Republic,tap water,338.0,particles/L
-WTP3_Treated|10.1016/j.sciotenv.2018.08.178,Czech Republic,Czech Republic,tap water,628.0,particles/L
-1|http://dce2.au.dk/pub/SR291.pdf,Knabrostræde (1210 Kbh. K),Denmark,tap water,0.58,particles/L
-1|http://dce2.au.dk/pub/SR291.pdf,Knabrostræde (1210 Kbh. K),Denmark,tap water,0.36,particles/L
-2|http://dce2.au.dk/pub/SR291.pdf,Eriksgade (1708 Kbh. V),Denmark,tap water,0.32,particles/L
-3|http://dce2.au.dk/pub/SR291.pdf,Blegdamsvej (2200 Kbh N),Denmark,tap water,0.24,particles/L
-4|http://dce2.au.dk/pub/SR291.pdf,Ernie Wilkins Vej (2450 Kbh S.),Denmark,tap water,0.26,particles/L
-5|http://dce2.au.dk/pub/SR291.pdf,Saunte Bygade (3100 Hornbæk),Denmark,tap water,0.14,particles/L
-6|http://dce2.au.dk/pub/SR291.pdf,Kolibrivej (4040 Jyllinge),Denmark,tap water,0.22,particles/L
-7|http://dce2.au.dk/pub/SR291.pdf,Østre Alle? (4800 Nykøbing F),Denmark,tap water,0.2,particles/L
-8|http://dce2.au.dk/pub/SR291.pdf,Ore Strandpark (4850 Stubbekøbing),Denmark,tap water,0.6,particles/L
-9|http://dce2.au.dk/pub/SR291.pdf,Villestofteheg-net (5210 Odense NV),Denmark,tap water,0.24,particles/L
-10|http://dce2.au.dk/pub/SR291.pdf,Lindehaven (5270 Odense),Denmark,tap water,0.26,particles/L
-11|http://dce2.au.dk/pub/SR291.pdf,Dagmargade 6000 Odense C),Denmark,tap water,0.22,particles/L
-12|http://dce2.au.dk/pub/SR291.pdf,Hjelmalle? (6200 Aabenra?),Denmark,tap water,0.54,particles/L
-13|http://dce2.au.dk/pub/SR291.pdf,Lundsbjerg Industrivej (6200 Aabenra?),Denmark,tap water,0.18,particles/L
-14|http://dce2.au.dk/pub/SR291.pdf,Kværsløkke (6300 Gråsten),Denmark,tap water,0.08,particles/L
-15|http://dce2.au.dk/pub/SR291.pdf,Aavangen (9575 Terndrup),Denmark,tap water,0.38,particles/L
-16|http://dce2.au.dk/pub/SR291.pdf,Gunnar Clausens vej (8260 Viby J.),Denmark,tap water,0.34,particles/L
-17|http://dce2.au.dk/pub/SR291.pdf,Kristtornvej (8200 Aarhus N.),Denmark,tap water,0.26,particles/L
-settled|10.1016/j.chemosphere.2021.132587,"Ontario, Canada",Canada,tap water,11.0,particles/L
-filtered|10.1016/j.chemosphere.2021.132587,"Ontario, Canada",Canada,tap water,11.0,particles/L
-clearwell|10.1016/j.chemosphere.2021.132587,"Ontario, Canada",Canada,tap water,31.0,particles/L
-distribution|10.1016/j.chemosphere.2021.132587,"Ontario, Canada",Canada,tap water,20.0,particles/L
-C|10.18520/cs/v117/i11/1874-1879,"Chennai, India",India,tap water,6.0,particles/L
-B1|10.18520/cs/v117/i11/1874-1879,"Chennai, India",India,tap water,5.0,particles/L
-B2|10.18520/cs/v117/i11/1874-1879,"Chennai, India",India,tap water,5.0,particles/L
-B3|10.18520/cs/v117/i11/1874-1879,"Chennai, India",India,tap water,5.0,particles/L
-B4|10.18520/cs/v117/i11/1874-1879,"Chennai, India",India,tap water,5.0,particles/L
-B5|10.18520/cs/v117/i11/1874-1879,"Chennai, India",India,tap water,2.0,particles/L
-Czech_Milence_DWTP|10.11001/jksww.2020.34.5.357,Czech Republic,Czech Republic,tap water,14.0,particles/L
-Czech_Plzen_DWTP|10.11001/jksww.2020.34.5.357,Czech Republic,Czech Republic,tap water,151.0,particles/L
-France|10.1016/j.cej.2020.128381,France,France,tap water,32.0,particles/L
-Finland|10.1016/j.cej.2020.128381,Finland,Finland,tap water,1.0,particles/L
-Finland|10.1016/j.cej.2020.128381,Finland,Finland,tap water,0.4,particles/L
-China|10.1016/j.cej.2020.128381,China,China,tap water,0.14,particles/L
-China|10.1016/j.cej.2020.128381,China,China,tap water,0.06,particles/L
-Korea|10.1016/j.cej.2020.128381,Korea,Korea,tap water,0.4,particles/L
-Korea|10.1016/j.cej.2020.128381,Korea,Korea,tap water,0.1,particles/L
-Korea|10.1016/j.cej.2020.128381,Korea,Korea,tap water,0.3,particles/L
-Finland2|10.1016/j.cej.2020.128381,Finland,Finland,tap water,2.5,particles/L
-HongKong|10.1016/j.cej.2020.128381,Hong Kong,Hong Kong,tap water,0.4,particles/L
-HongKong|10.1016/j.cej.2020.128381,Hong Kong,Hong Kong,tap water,0.27,particles/L
-UnitedStates|10.1016/j.cej.2020.128381,United States,USA,tap water,0.0008,particles/L
-UnitedStates|10.1016/j.cej.2020.128381,United States,USA,tap water,2.43e-06,particles/L
-UnitedStates2|10.1016/j.cej.2020.128381,United States,USA,tap water,0.009,particles/L
-UnitedStates2|10.1016/j.cej.2020.128381,United States,USA,tap water,0.019,particles/L
-UnitedStates2|10.1016/j.cej.2020.128381,United States,USA,tap water,0.047,particles/L
-UnitedStates2|10.1016/j.cej.2020.128381,United States,USA,tap water,0.064,particles/L
-UnitedStates2|10.1016/j.cej.2020.128381,United States,USA,tap water,0.092,particles/L
-UnitedStates2|10.1016/j.cej.2020.128381,United States,USA,tap water,0.127,particles/L
-Sarkar|10.1007/s11783-021-1492-5,"Ganga River, India",India,tap water,2.75,particles/L
-Dalmau-Soler|10.1007/s11783-021-1492-5,Spain,Spain,tap water,0.07,particles/L
-AverageAll|10.1016/j.envres.2022.112855,China,China,tap water,29.0,particles/L
-PE|10.1016/j.envpol.2021.117524,Warnow river,Germany,tap water,0.117,particles/L
-PP|10.1016/j.envpol.2021.117524,Warnow river,Germany,tap water,0.034,particles/L
-PS|10.1016/j.envpol.2021.117524,Warnow river,Germany,tap water,0.045,particles/L
-PET|10.1016/j.envpol.2021.117524,Warnow river,Germany,tap water,0.0,particles/L
-PVC|10.1016/j.envpol.2021.117524,Warnow river,Germany,tap water,0.0,particles/L
-others|10.1016/j.envpol.2021.117524,Warnow river,Germany,tap water,0.0,particles/L
-DWTP1|10.21203/rs.3.rs-242504/v1,Tehran,Iran,tap water,1401.0,particles/L
-DWTP2|10.21203/rs.3.rs-242504/v1,Tehran,Iran,tap water,1042.0,particles/L
-DWTP3|10.21203/rs.3.rs-242504/v1,Tehran,Iran,tap water,971.0,particles/L
-1|10.1016/j.sciotenv.2020.143421,Germany,Germany,tap water,0.0,particles/L
-29|10.1016/j.etap.2018.12.009,"Three Gorges Reservoir, China",China,tap water,4.703,particles/L
-30|10.1016/j.etap.2018.12.009,"Dongting Lake, China",China,tap water,1.1917,particles/L
-20a|10.1016/j.etap.2018.12.009,"Hong Lake, China",China,tap water,2.2825,particles/L
-7|10.1016/j.etap.2018.12.009,"Yangtze Estuary, China",China,tap water,4.1373,particles/L
-20b|10.1016/j.etap.2018.12.009,"Danjangkou Reservoir, China",China,tap water,2.594,particles/L
-1|10.1016/j.envpol.2020.114227,"Mexico City, Mexico; Transport Zone",Mexico,tap water,20.0,particles/L
-2|10.1016/j.envpol.2020.114227,"Mexico City, Mexico; Market Zone",Mexico,tap water,13.0,particles/L
-3|10.1016/j.envpol.2020.114227,"Mexico City, Mexico",Mexico,tap water,17.0,particles/L
-4|10.1016/j.envpol.2020.114227,"Mexico City, Mexico",Mexico,tap water,14.0,particles/L
-5|10.1016/j.envpol.2020.114227,"Mexico City, Mexico; Commercial Zone",Mexico,tap water,60.0,particles/L
-6|10.1016/j.envpol.2020.114227,"Mexico City, Mexico",Mexico,tap water,13.0,particles/L
-7|10.1016/j.envpol.2020.114227,"Mexico City, Mexico; Transport Zone",Mexico,tap water,15.0,particles/L
-8|10.1016/j.envpol.2020.114227,"Mexico City, Mexico",Mexico,tap water,18.0,particles/L
-9|10.1016/j.envpol.2020.114227,"Mexico City, Mexico; Market Zone",Mexico,tap water,37.0,particles/L
-10|10.1016/j.envpol.2020.114227,"Mexico City, Mexico; Tourism Zone",Mexico,tap water,34.0,particles/L
-11|10.1016/j.envpol.2020.114227,"Mexico City, Mexico; Tourism Zone",Mexico,tap water,38.0,particles/L
-12|10.1016/j.envpol.2020.114227,"Mexico City, Mexico; Tourism Zone",Mexico,tap water,60.0,particles/L
-13|10.1016/j.envpol.2020.114227,"Mexico City, Mexico",Mexico,tap water,7.0,particles/L
-14|10.1016/j.envpol.2020.114227,"Mexico City, Mexico; Transport Zone",Mexico,tap water,25.0,particles/L
-15|10.1016/j.envpol.2020.114227,"Mexico City, Mexico; Transport Zone",Mexico,tap water,22.0,particles/L
-16|10.1016/j.envpol.2020.114227,"Mexico City, Mexico",Mexico,tap water,15.0,particles/L
-17|10.1016/j.envpol.2020.114227,"Mexico City, Mexico; Hospital Zone",Mexico,tap water,7.0,particles/L
-18|10.1016/j.envpol.2020.114227,"Mexico City, Mexico",Mexico,tap water,37.0,particles/L
-19|10.1016/j.envpol.2020.114227,"Mexico City, Mexico; Hospital Zone",Mexico,tap water,9.0,particles/L
-20|10.1016/j.envpol.2020.114227,"Mexico City, Mexico; Commercial Zone",Mexico,tap water,6.0,particles/L
-21|10.1016/j.envpol.2020.114227,"Mexico City, Mexico; Recreation Zone",Mexico,tap water,7.0,particles/L
-22|10.1016/j.envpol.2020.114227,"Mexico City, Mexico; Education Zone",Mexico,tap water,8.0,particles/L
-23|10.1016/j.envpol.2020.114227,"Mexico City, Mexico",Mexico,tap water,14.0,particles/L
-24|10.1016/j.envpol.2020.114227,"Mexico City, Mexico",Mexico,tap water,8.0,particles/L
-25|10.1016/j.envpol.2020.114227,"Mexico City, Mexico",Mexico,tap water,8.0,particles/L
-26|10.1016/j.envpol.2020.114227,"Mexico City, Mexico; Market Zone",Mexico,tap water,7.0,particles/L
-27|10.1016/j.envpol.2020.114227,"Mexico City, Mexico",Mexico,tap water,13.0,particles/L
-28|10.1016/j.envpol.2020.114227,"Mexico City, Mexico; Education Zone",Mexico,tap water,8.0,particles/L
-29|10.1016/j.envpol.2020.114227,"Mexico City, Mexico; Transport Zone",Mexico,tap water,6.0,particles/L
-30|10.1016/j.envpol.2020.114227,"Mexico City, Mexico; Transport Zone",Mexico,tap water,10.0,particles/L
-31|10.1016/j.envpol.2020.114227,"Mexico City, Mexico; Commercial Zone",Mexico,tap water,23.0,particles/L
-32|10.1016/j.envpol.2020.114227,"Mexico City, Mexico",Mexico,tap water,15.0,particles/L
-33|10.1016/j.envpol.2020.114227,"Mexico City, Mexico; Education Zone",Mexico,tap water,13.0,particles/L
-34|10.1016/j.envpol.2020.114227,"Mexico City, Mexico; Recreation Zone",Mexico,tap water,9.0,particles/L
-35|10.1016/j.envpol.2020.114227,"Mexico City, Mexico; Tourism Zone",Mexico,tap water,10.0,particles/L
-36|10.1016/j.envpol.2020.114227,"Mexico City, Mexico",Mexico,tap water,28.0,particles/L
-37|10.1016/j.envpol.2020.114227,"Mexico City, Mexico",Mexico,tap water,5.0,particles/L
-38|10.1016/j.envpol.2020.114227,"Mexico City, Mexico; Education Zone",Mexico,tap water,8.0,particles/L
-39|10.1016/j.envpol.2020.114227,"Mexico City, Mexico; Commercial Zone",Mexico,tap water,10.0,particles/L
-40|10.1016/j.envpol.2020.114227,"Mexico City, Mexico; Commercial Zone",Mexico,tap water,7.0,particles/L
-41|10.1016/j.envpol.2020.114227,"Mexico City, Mexico; Commercial Zone",Mexico,tap water,7.0,particles/L
-42|10.1016/j.envpol.2020.114227,"Mexico City, Mexico",Mexico,tap water,91.0,particles/L
-1|10.1007/s11356-021-12467-y,"Baden-Wurttemberg, Germany",Germany,tap water,0.066,particles/L
-drinking_water|10.3390/w12113115,"Sinos River Basin, Rio Grande, Brazil",Brazil,tap water,105.8,particles/L
-Pivokonsky1|10.1016/j.cotox.2021.09.003,"Uhlava River, Czech Republic",Czech Republic,tap water,338.0,particles/L
-Pivokonsky2|10.1016/j.cotox.2021.09.003,"Reservoir Water, Czech Republic",Czech Republic,tap water,151.0,particles/L
-Lao Shann|10.1016/j.jwpe.2020.101884,China,China,bottled water,10.0,particles/L
-VOSS|10.1016/j.jwpe.2020.101884,China,China,bottled water,34.0,particles/L
-Master_kong|10.1016/j.jwpe.2020.101884,China,China,bottled water,36.0,particles/L
-Kun_Lun_Shan|10.1016/j.jwpe.2020.101884,China,China,bottled water,44.0,particles/L
-Wahaha|10.1016/j.jwpe.2020.101884,China,China,bottled water,28.0,particles/L
-C'estbon|10.1016/j.jwpe.2020.101884,China,China,bottled water,10.0,particles/L
-Run_Tian_Cui|10.1016/j.jwpe.2020.101884,China,China,bottled water,14.0,particles/L
-Ever_Grande|10.1016/j.jwpe.2020.101884,China,China,bottled water,8.0,particles/L
-Ocean_AQUA|10.1016/j.jwpe.2020.101884,China,China,bottled water,4.0,particles/L
-Ganten_Mineral_Water|10.1016/j.jwpe.2020.101884,China,China,bottled water,12.0,particles/L
-Nong_Fu|10.1016/j.jwpe.2020.101884,China,China,bottled water,18.0,particles/L
-Tibet_Ge_Sang|10.1016/j.jwpe.2020.101884,China,China,bottled water,10.0,particles/L
-ALKAO.UA|10.1016/j.jwpe.2020.101884,China,China,bottled water,24.0,particles/L
-Ban_Ma|10.1016/j.jwpe.2020.101884,China,China,bottled water,28.0,particles/L
-Shi_Lin|10.1016/j.jwpe.2020.101884,China,China,bottled water,14.0,particles/L
-LAVA|10.1016/j.jwpe.2020.101884,China,China,bottled water,14.0,particles/L
-Watsons|10.1016/j.jwpe.2020.101884,China,China,bottled water,32.0,particles/L
-Hui_Shan_Gu|10.1016/j.jwpe.2020.101884,China,China,bottled water,6.0,particles/L
-Nong_Shi|10.1016/j.jwpe.2020.101884,China,China,bottled water,6.0,particles/L
-Jin_Mai_lang|10.1016/j.jwpe.2020.101884,China,China,bottled water,10.0,particles/L
-Ganten_Purified_Water|10.1016/j.jwpe.2020.101884,China,China,bottled water,4.0,particles/L
-Nestle_Pure_Life|10.1016/j.jwpe.2020.101884,China,China,bottled water,44.0,particles/L
-Tian_Di_Jing_Hua|10.1016/j.jwpe.2020.101884,China,China,bottled water,16.0,particles/L
-Raw|10.1007/s11356-021-13220-1,"Llobregat River Basin, Germany",Germany,tap water,1.0,particles/L
-Sand|10.1007/s11356-021-13220-1,"Llobregat River Basin, Germany",Germany,tap water,0.2,particles/L
-GAC|10.1007/s11356-021-13220-1,"Llobregat River Basin, Germany",Germany,tap water,0.2,particles/L
-Reverse_Osmosis|10.1007/s11356-021-13220-1,"Llobregat River Basin, Germany",Germany,tap water,0.1,particles/L
-Finished|10.1007/s11356-021-13220-1,"Llobregat River Basin, Germany",Germany,tap water,0.1,particles/L
-B_Well|10.22630/PNIKS.2019.28.4.59,"Riobamba City, Ecuador",Ecuador,tap water,3.0,particles/L
-C_Well|10.22630/PNIKS.2019.28.4.59,"Riobamba City, Ecuador",Ecuador,tap water,2.0,particles/L
-G_Well|10.22630/PNIKS.2019.28.4.59,"Riobamba City, Ecuador",Ecuador,tap water,2.0,particles/L
-D_Reserve_Tank|10.22630/PNIKS.2019.28.4.59,"Riobamba City, Ecuador",Ecuador,tap water,1.0,particles/L
-I_Reserve_Tank|10.22630/PNIKS.2019.28.4.59,"Riobamba City, Ecuador",Ecuador,tap water,2.0,particles/L
-K_Reserve_Tank|10.22630/PNIKS.2019.28.4.59,"Riobamba City, Ecuador",Ecuador,tap water,1.0,particles/L
-N_Reserve_Tank|10.22630/PNIKS.2019.28.4.59,"Riobamba City, Ecuador",Ecuador,tap water,1.0,particles/L
-F_Distribution_Network|10.22630/PNIKS.2019.28.4.59,"Riobamba City, Ecuador",Ecuador,tap water,1.0,particles/L
-N_Distribution_Network|10.22630/PNIKS.2019.28.4.59,"Riobamba City, Ecuador",Ecuador,tap water,1.0,particles/L
-C_Hydrant|10.22630/PNIKS.2019.28.4.59,"Riobamba City, Ecuador",Ecuador,tap water,1.0,particles/L
-D_Hydrant|10.22630/PNIKS.2019.28.4.59,"Riobamba City, Ecuador",Ecuador,tap water,1.0,particles/L
-I_Hydrant|10.22630/PNIKS.2019.28.4.59,"Riobamba City, Ecuador",Ecuador,tap water,1.0,particles/L
-Australia1|10.3390/app112110109,Australia,Australia,tap water,1.5,particles/L
-Australia2|10.3390/app112110109,Australia,Australia,tap water,0.48,particles/L
-Australia3|10.3390/app112110109,Australia,Australia,tap water,0.28,particles/L
-Australia4|10.3390/app112110109,Australia,Australia,tap water,0.18,particles/L
-Australia5|10.3390/app112110109,Australia,Australia,tap water,0.96,particles/L
-Australia6|10.3390/app112110109,Australia,Australia,tap water,0.91,particles/L
-Australia7|10.3390/app112110109,Australia,Australia,tap water,2.76,particles/L
-Canada1|10.3390/app112110109,Canada,Canada,tap water,0.5,particles/L
-Canada2|10.3390/app112110109,Canada,Canada,tap water,1.76,particles/L
-China1|10.3390/app112110109,China,China,tap water,28.4,particles/L
-China2|10.3390/app112110109,China,China,tap water,0.13,particles/L
-China3|10.3390/app112110109,China,China,tap water,0.05,particles/L
-China4|10.3390/app112110109,China,China,tap water,2.7,particles/L
-China5|10.3390/app112110109,China,China,tap water,0.3,particles/L
-China6|10.3390/app112110109,China,China,tap water,0.6,particles/L
-China7|10.3390/app112110109,China,China,tap water,0.59,particles/L
-China8|10.3390/app112110109,China,China,tap water,0.59,particles/L
-China9|10.3390/app112110109,China,China,tap water,30.6,particles/L
-China10|10.3390/app112110109,China,China,tap water,1.72,particles/L
-China11|10.3390/app112110109,China,China,tap water,22.9,particles/L
-China12|10.3390/app112110109,China,China,tap water,2.9,particles/L
-China13|10.3390/app112110109,China,China,tap water,7.9,particles/L
-China14|10.3390/app112110109,China,China,tap water,30.3,particles/L
-China15|10.3390/app112110109,China,China,tap water,14.3,particles/L
-China16|10.3390/app112110109,China,China,tap water,8.25,particles/L
-China17|10.3390/app112110109,China,China,tap water,0.24,particles/L
-China18|10.3390/app112110109,China,China,tap water,0.34,particles/L
-China19|10.3390/app112110109,China,China,tap water,20.96,particles/L
-China20|10.3390/app112110109,China,China,tap water,31.85,particles/L
-China21|10.3390/app112110109,China,China,tap water,40.67,particles/L
-China22|10.3390/app112110109,China,China,tap water,20.44,particles/L
-China23|10.3390/app112110109,China,China,tap water,0.78,particles/L
-China24|10.3390/app112110109,China,China,tap water,0.62,particles/L
-China25|10.3390/app112110109,China,China,tap water,0.1,particles/L
-China26|10.3390/app112110109,China,China,tap water,0.07,particles/L
-China27|10.3390/app112110109,China,China,tap water,0.0,particles/L
-China28|10.3390/app112110109,China,China,tap water,0.0,particles/L
-China29|10.3390/app112110109,China,China,tap water,400.0,particles/L
-China30|10.3390/app112110109,China,China,tap water,750.0,particles/L
-China31|10.3390/app112110109,China,China,tap water,300.0,particles/L
-Denmark1|10.3390/app112110109,Denmark,Denmark,tap water,120.3,particles/L
-Finland1|10.3390/app112110109,Finland,Finland,tap water,1.05,particles/L
-Finland2|10.3390/app112110109,Finland,Finland,tap water,13.5,particles/L
-Finland3|10.3390/app112110109,Finland,Finland,tap water,0.03,particles/L
-Finland4|10.3390/app112110109,Finland,Finland,tap water,0.005,particles/L
-Finland5|10.3390/app112110109,Finland,Finland,tap water,0.1,particles/L
-Finland6|10.3390/app112110109,Finland,Finland,tap water,0.02,particles/L
-Finland7|10.3390/app112110109,Finland,Finland,tap water,6.84,particles/L
-France1|10.3390/app112110109,France,France,tap water,35.0,particles/L
-France2|10.3390/app112110109,France,France,tap water,2.84,particles/L
-Germany1|10.3390/app112110109,Germany,Germany,tap water,1.82,particles/L
-Germany2|10.3390/app112110109,Germany,Germany,tap water,5.9,particles/L
-Germany3|10.3390/app112110109,Germany,Germany,tap water,3.0,particles/L
-Germany4|10.3390/app112110109,Germany,Germany,tap water,7.0,particles/L
-Germany5|10.3390/app112110109,Germany,Germany,tap water,14.0,particles/L
-HingKong1|10.3390/app112110109,Hong Kong,China,tap water,0.27,particles/L
-HingKong2|10.3390/app112110109,Hong Kong,China,tap water,0.4,particles/L
-Iran1|10.3390/app112110109,Iran,Iran,tap water,0.42,particles/L
-Iran2|10.3390/app112110109,Iran,Iran,tap water,1.91,particles/L
-Iran3|10.3390/app112110109,Iran,Iran,tap water,2.11,particles/L
-Iran4|10.3390/app112110109,Iran,Iran,tap water,0.58,particles/L
-Israel1|10.3390/app112110109,Israel,Israel,tap water,1.97,particles/L
-Israel2|10.3390/app112110109,Israel,Israel,tap water,7.3,particles/L
-Italy1|10.3390/app112110109,Italy,Italy,tap water,0.4,particles/L
-Italy2|10.3390/app112110109,Italy,Italy,tap water,0.52,particles/L
-Italy3|10.3390/app112110109,Italy,Italy,tap water,0.2,particles/L
-Korea1|10.3390/app112110109,Korea,Korea,tap water,0.44,particles/L
-Korea2|10.3390/app112110109,Korea,Korea,tap water,0.14,particles/L
-Korea3|10.3390/app112110109,Korea,Korea,tap water,0.28,particles/L
-Korea4|10.3390/app112110109,Korea,Korea,tap water,0.11,particles/L
-Netherlands1|10.3390/app112110109,Netherlands,Netherlands,tap water,39.0,particles/L
-Netherlands2|10.3390/app112110109,Netherlands,Netherlands,tap water,61.0,particles/L
-Netherlands3|10.3390/app112110109,Netherlands,Netherlands,tap water,65.0,particles/L
-Netherlands4|10.3390/app112110109,Netherlands,Netherlands,tap water,81.0,particles/L
-Netherlands5|10.3390/app112110109,Netherlands,Netherlands,tap water,56.0,particles/L
-Netherlands6|10.3390/app112110109,Netherlands,Netherlands,tap water,55.0,particles/L
-Netherlands7|10.3390/app112110109,Netherlands,Netherlands,tap water,55.0,particles/L
-Poland1|10.3390/app112110109,Poland,Poland,tap water,0.34,particles/L
-Russia1|10.3390/app112110109,Russia,Russia,tap water,148.0,particles/L
-Scotland1|10.3390/app112110109,Scotland,Scotland,tap water,0.25,particles/L
-Scotland2|10.3390/app112110109,Scotland,Scotland,tap water,1.0,particles/L
-SouthKorea1|10.3390/app112110109,South Korea,South Korea,tap water,49.0,particles/L
-SouthKorea2|10.3390/app112110109,South Korea,South Korea,tap water,33.0,particles/L
-SouthKorea3|10.3390/app112110109,South Korea,South Korea,tap water,297.0,particles/L
-SouthKorea4|10.3390/app112110109,South Korea,South Korea,tap water,66.0,particles/L
-Spain1|10.3390/app112110109,Spain,Spain,tap water,0.31,particles/L
-Spain2|10.3390/app112110109,Spain,Spain,tap water,0.44,particles/L
-Spain3|10.3390/app112110109,Spain,Spain,tap water,0.92,particles/L
-Spain4|10.3390/app112110109,Spain,Spain,tap water,1.08,particles/L
-Spain5|10.3390/app112110109,Spain,Spain,tap water,12.8,particles/L
-Spain6|10.3390/app112110109,Spain,Spain,tap water,41.77,particles/L
-Spain7|10.3390/app112110109,Spain,Spain,tap water,16.4,particles/L
-Spain8|10.3390/app112110109,Spain,Spain,tap water,131.36,particles/L
-Spain9|10.3390/app112110109,Spain,Spain,tap water,0.98,particles/L
-Sweden1|10.3390/app112110109,Sweden,Sweden,tap water,4.0,particles/L
-Sweden2|10.3390/app112110109,Sweden,Sweden,tap water,0.008,particles/L
-Thailand1|10.3390/app112110109,Thailand,Thailand,tap water,2.0,particles/L
-Turkey1|10.3390/app112110109,Turkey,Turkey,tap water,7.0,particles/L
-Turkey2|10.3390/app112110109,Turkey,Turkey,tap water,4.11,particles/L
-Turkey3|10.3390/app112110109,Turkey,Turkey,tap water,1.6,particles/L
-Turkey4|10.3390/app112110109,Turkey,Turkey,tap water,0.7,particles/L
-Turkey5|10.3390/app112110109,Turkey,Turkey,tap water,0.6,particles/L
-UK1|10.3390/app112110109,UK,UK,tap water,15.7,particles/L
-USA1|10.3390/app112110109,USA,USA,tap water,3.7,particles/L
-USA2|10.3390/app112110109,USA,USA,tap water,17.6,particles/L
-USA3|10.3390/app112110109,USA,USA,tap water,17.2,particles/L
-USA4|10.3390/app112110109,USA,USA,tap water,0.09,particles/L
-USA5|10.3390/app112110109,USA,USA,tap water,0.05,particles/L
-USA6|10.3390/app112110109,USA,USA,tap water,5.9,particles/L
-USA7|10.3390/app112110109,USA,USA,tap water,2.6,particles/L
-USA8|10.3390/app112110109,USA,USA,tap water,0.098,particles/L
-USA9|10.3390/app112110109,USA,USA,tap water,0.00088,particles/L
-27.11.2019|10.1016/j.jhazmat.2021.125347,"Kolkata, India",India,tap water,2.71,particles/L
-21.12.2019|10.1016/j.jhazmat.2021.125347,"Kolkata, India",India,tap water,2.56,particles/L
-22.01.2020|10.1016/j.jhazmat.2021.125347,"Kolkata, India",India,tap water,2.4,particles/L
-19.02.2020|10.1016/j.jhazmat.2021.125347,"Kolkata, India",India,tap water,2.85,particles/L
-16.03.2020|10.1016/j.jhazmat.2021.125347,"Kolkata, India",India,tap water,3.23,particles/L
-Milence|10.1016/j.scitotenv.2020.140236,"Uhlava River, Czech Republic",Czech Republic,tap water,2.8,particles/L
-Milence|10.1016/j.scitotenv.2020.140236,"Uhlava River, Czech Republic",Czech Republic,tap water,17.0,particles/L
-Plzen|10.1016/j.scitotenv.2020.140236,"Uhlava River, Czech Republic",Czech Republic,tap water,12.0,particles/L
-Plzen|10.1016/j.scitotenv.2020.140236,"Uhlava River, Czech Republic",Czech Republic,tap water,180.0,particles/L
-A|10.1016/j.chemosphere.2020.126493,China,China,tap water,125.0,particles/L
-A|10.1016/j.chemosphere.2020.126493,China,China,tap water,0.0,particles/L
-A|10.1016/j.chemosphere.2020.126493,China,China,tap water,249.0,particles/L
-A|10.1016/j.chemosphere.2020.126493,China,China,tap water,872.0,particles/L
-A|10.1016/j.chemosphere.2020.126493,China,China,tap water,249.0,particles/L
-A|10.1016/j.chemosphere.2020.126493,China,China,tap water,374.0,particles/L
-A|10.1016/j.chemosphere.2020.126493,China,China,tap water,499.0,particles/L
-A|10.1016/j.chemosphere.2020.126493,China,China,tap water,249.0,particles/L
-A|10.1016/j.chemosphere.2020.126493,China,China,tap water,499.0,particles/L
-A|10.1016/j.chemosphere.2020.126493,China,China,tap water,374.0,particles/L
-A|10.1016/j.chemosphere.2020.126493,China,China,tap water,249.0,particles/L
-A|10.1016/j.chemosphere.2020.126493,China,China,tap water,249.0,particles/L
-A|10.1016/j.chemosphere.2020.126493,China,China,tap water,249.0,particles/L
-A|10.1016/j.chemosphere.2020.126493,China,China,tap water,374.0,particles/L
-A|10.1016/j.chemosphere.2020.126493,China,China,tap water,748.0,particles/L
-A|10.1016/j.chemosphere.2020.126493,China,China,tap water,374.0,particles/L
-A|10.1016/j.chemosphere.2020.126493,China,China,tap water,1247.0,particles/L
-A|10.1016/j.chemosphere.2020.126493,China,China,tap water,623.0,particles/L
-A|10.1016/j.chemosphere.2020.126493,China,China,tap water,499.0,particles/L
-A|10.1016/j.chemosphere.2020.126493,China,China,tap water,374.0,particles/L
-A|10.1016/j.chemosphere.2020.126493,China,China,tap water,125.0,particles/L
-A|10.1016/j.chemosphere.2020.126493,China,China,tap water,499.0,particles/L
-A|10.1016/j.chemosphere.2020.126493,China,China,tap water,249.0,particles/L
-A|10.1016/j.chemosphere.2020.126493,China,China,tap water,499.0,particles/L
-A|10.1016/j.chemosphere.2020.126493,China,China,tap water,249.0,particles/L
-A|10.1016/j.chemosphere.2020.126493,China,China,tap water,0.0,particles/L
-A|10.1016/j.chemosphere.2020.126493,China,China,tap water,1247.0,particles/L
-A|10.1016/j.chemosphere.2020.126493,China,China,tap water,374.0,particles/L
-A|10.1016/j.chemosphere.2020.126493,China,China,tap water,623.0,particles/L
-A|10.1016/j.chemosphere.2020.126493,China,China,tap water,499.0,particles/L
-A|10.1016/j.chemosphere.2020.126493,China,China,tap water,499.0,particles/L
-A|10.1016/j.chemosphere.2020.126493,China,China,tap water,374.0,particles/L
-A|10.1016/j.chemosphere.2020.126493,China,China,tap water,748.0,particles/L
-A|10.1016/j.chemosphere.2020.126493,China,China,tap water,623.0,particles/L
-A|10.1016/j.chemosphere.2020.126493,China,China,tap water,249.0,particles/L
-A|10.1016/j.chemosphere.2020.126493,China,China,tap water,374.0,particles/L
-A|10.1016/j.chemosphere.2020.126493,China,China,tap water,249.0,particles/L
-A|10.1016/j.chemosphere.2020.126493,China,China,tap water,748.0,particles/L
-Finished|10.1016/j.scitotenv.2019.134520,"Yangtze River, China",China,tap water,930.0,particles/L
-April_DWTP|10.1007/s11356-021-13769-x,XiangJiang River,China,tap water,282.0,particles/L
-April_Tap|10.1007/s11356-021-13769-x,XiangJiang River,China,tap water,267.0,particles/L
-May_DWTP|10.1007/s11356-021-13769-x,XiangJiang River,China,tap water,338.0,particles/L
-May_Tap|10.1007/s11356-021-13769-x,XiangJiang River,China,tap water,321.0,particles/L
-June_DWTP|10.1007/s11356-021-13769-x,XiangJiang River,China,tap water,388.0,particles/L
-June_Tap|10.1007/s11356-021-13769-x,XiangJiang River,China,tap water,381.0,particles/L
-July_DWTP|10.1007/s11356-021-13769-x,XiangJiang River,China,tap water,400.0,particles/L
-July_Tap|10.1007/s11356-021-13769-x,XiangJiang River,China,tap water,405.0,particles/L
-TCQS|10.1016/j.scitotenv.2021.148001,"South-to-North Water Diversion Project, China",China,tap water,0.4,particles/L
-SHN|10.1016/j.scitotenv.2021.148001,"South-to-North Water Diversion Project, China",China,tap water,0.51,particles/L
-CHQ|10.1016/j.scitotenv.2021.148001,"South-to-North Water Diversion Project, China",China,tap water,0.51,particles/L
-CHH|10.1016/j.scitotenv.2021.148001,"South-to-North Water Diversion Project, China",China,tap water,0.55,particles/L
-ZHB|10.1016/j.scitotenv.2021.148001,"South-to-North Water Diversion Project, China",China,tap water,0.6,particles/L
-DAS|10.1016/j.scitotenv.2021.148001,"South-to-North Water Diversion Project, China",China,tap water,0.605,particles/L
-XHS|10.1016/j.scitotenv.2021.148001,"South-to-North Water Diversion Project, China",China,tap water,0.63,particles/L
-HNZ|10.1016/j.scitotenv.2021.148001,"South-to-North Water Diversion Project, China",China,tap water,0.75,particles/L
-TCH|10.1016/j.scitotenv.2021.148001,"South-to-North Water Diversion Project, China",China,tap water,0.56,particles/L
-WHH|10.1016/j.scitotenv.2021.148001,"South-to-North Water Diversion Project, China",China,tap water,0.6,particles/L
-Spr|10.1016/j.scitotenv.2021.148001,"South-to-North Water Diversion Project, China",China,tap water,0.39,particles/L
-Sum|10.1016/j.scitotenv.2021.148001,"South-to-North Water Diversion Project, China",China,tap water,0.36,particles/L
-Aut|10.1016/j.scitotenv.2021.148001,"South-to-North Water Diversion Project, China",China,tap water,0.75,particles/L
-Win|10.1016/j.scitotenv.2021.148001,"South-to-North Water Diversion Project, China",China,tap water,0.54,particles/L
-1|10.1016/j.scitotenv.2022.154015,South Korea,South Korea,tap water,0.2,particles/L
+Sample_ID,Location,Countries,Source,Concentration,Concentration_Units,Continent
+1|10.1016/j.watres.2017.11.011,Germany,Germany,bottled water,3.0786325577727995e-173,particles/L,Europe
+2|10.1016/j.watres.2017.11.011,Germany,Germany,bottled water,118.0,particles/L,Europe
+3|10.1016/j.watres.2017.11.011,Germany,Germany,bottled water,50.0,particles/L,Europe
+4|10.1016/j.watres.2017.11.011,Germany,Germany,bottled water,11.0,particles/L,Europe
+2|10.1039/c6ay01184e,Germany,Germany,bottled water,1.0,particles/L,Europe
+IB|101119.10.3389/fchem.2018.00407,"Jakarta, Indonesia",Indonesia,bottled water,37.1,particles/L,Asia
+SO.B No.087 (AS/LB)|10.3389/fchem.2018.00407,"New Delhi, India",India,bottled water,3.72,particles/L,Asia
+P18NOV17CG3|10.3389/fchem.2018.00407,"Nairobi, Kenya",Kenya,bottled water,74.6,particles/L,Africa
+14.10.18|10.3389/fchem.2018.00407,"Tijuana, Mexico",Mexico,bottled water,20.0,particles/L,North America
+09.08.18|10.3389/fchem.2018.00407,"Reynosa, Mexico",Mexico,bottled water,37.3,particles/L,North America
+PRD 05 24 17 11:29|10.3389/fchem.2018.00407,"Fredonia, NY, USA",USA,bottled water,58.2,particles/L,North America
+FAB: 211017 09:06SP|10.3389/fchem.2018.00407,"Sao Paulo, Brazil",Brazil,bottled water,40.1,particles/L,South America
+FAB: 160817 15:05SP|10.3389/fchem.2018.00407,"Aparecida de Goiania, Brazil",Brazil,bottled water,12.5,particles/L,South America
+FAB: 091217 16:53SP|10.3389/fchem.2018.00407,"Rio de Janerio, Brazil",Brazil,bottled water,150.0,particles/L,South America
+P: 4/11/17 03:34 AZ|10.3389/fchem.2018.00407,"Beirut, Lebanon",Lebanon,bottled water,49.3,particles/L,Asia
+20171102 1214JN|10.3389/fchem.2018.00407,"Jinan, China",China,bottled water,156.0,particles/L,Asia
+20171021 3214GH|10.3389/fchem.2018.00407,"Beijing, China",China,bottled water,66.7,particles/L,Asia
+20171103 2106WF|10.3389/fchem.2018.00407,"Qingdao, China",China,bottled water,67.1,particles/L,Asia
+Tap Water_Cuba|10.1371/journal.pone.0194970,"Havana, Cuba",Cuba,tap water,7.17,particles/L,North America
+Tap Water_Ecuador|10.1371/journal.pone.0194970,"Quito, Ecuador",Ecuador,tap water,4.02,particles/L,South America
+Tap Water_England|10.1371/journal.pone.0194970,"London, England",England,tap water,7.73,particles/L,Europe
+Tap Water_France|10.1371/journal.pone.0194970,"Paris, France",France,tap water,1.82,particles/L,Europe
+Tap Water_Germany|10.1371/journal.pone.0194970,"Berlin, Germany; Tubingen, Germany",Germany,tap water,0.91,particles/L,Europe
+Tap Water_India|10.1371/journal.pone.0194970,"Ner Delhi, India",India,tap water,6.24,particles/L,Asia
+Tap Water_Indonesia|10.1371/journal.pone.0194970,"Depok City, Indonesia; Desa Puspanegara, Indonesia; Jakarta, Indonesia; Jatirahayu, Indonesia; Kedaung, Indonesia; Menteng, Indonesia; North Paninggilan, Indonesia; Pasireurih, Indonesia; South Tangerang City, Indonesia; Sukatani, Indonesia; Teluknaga, Indonesia; Warnasari, Indonesia",Indonesia,tap water,3.23,particles/L,Asia
+Tap Water_Ireland|10.1371/journal.pone.0194970,"Dublin, Ireland",Ireland,tap water,1.83,particles/L,Europe
+Tap Water_Italy|10.1371/journal.pone.0194970,"Pavia, Italy",Italy,tap water,0.0,particles/L,Europe
+Tap Water_Lebanon|10.1371/journal.pone.0194970,"Beirut, Lebanon; Burj el Brajneh, Lebanon; Choueifat, Lebanon; Ghobayreh, Lebanon; Khaldeh, Lebanon; Mreijeh, Lebanon",Lebanon,tap water,6.64,particles/L,Asia
+Tap Water_Slovakia|10.1371/journal.pone.0194970,"Brezova pod Bradlom, Slovakia; Kocvce, Slovakia; Piestany, Slovakia; Poprad, Slovakia; Prasnik, Slovakia; Radosina, Slovakia; Ruzomberok, Slovakia",Slovakia,tap water,3.83,particles/L,Europe
+Tap Water_Switzerland|10.1371/journal.pone.0194970,"Davos Platz, Switzerland; Gerbertingen, Switzerland",Switzerland,tap water,2.74,particles/L,Europe
+Tap Water_Uganda|10.1371/journal.pone.0194970,"Jinja, Uganda; Kampala, Uganda",Uganda,tap water,3.92,particles/L,Africa
+Tap Water_USA|10.1371/journal.pone.0194970,"Alpena, USA; Buffalo, USA; Chicago, USA; Clayton, USA; Duluth, USA; Glenview, USA; Holland, USA; Lawrence, USA; Los Angeles, USA; Louisville, USA; Mahopack, USA; Middle Village, USA; New York City, USA; Overland Park, USA; Palmetto Bay, USA; Pinebluff, USA; Spring, USA; Washington DC, USA; Wauwatosa, USA",USA,tap water,9.24,particles/L,North America
+Bottled Water|10.1371/journal.pone.0194970,USA,USA,bottled water,3.57,particles/L,North America
+Lake Superior 1|10.1371/journal.pone.0194970,Lake Superior,USA,bottled water,0.67,particles/L,North America
+Lake Superior 2|10.1371/journal.pone.0194970,Lake Superior,USA,bottled water,4.33,particles/L,North America
+Lake Superior 3|10.1371/journal.pone.0194970,Lake Superior,USA,bottled water,3.33,particles/L,North America
+Lake Michigan 1|10.1371/journal.pone.0194970,Lake Michigan,USA,bottled water,1.33,particles/L,North America
+Lake Michigan 2|10.1371/journal.pone.0194970,Lake Michigan,USA,bottled water,0.0,particles/L,North America
+Lake Michigan 3|10.1371/journal.pone.0194970,Lake Michigan,USA,bottled water,14.3,particles/L,North America
+Lake Michigan 4|10.1371/journal.pone.0194970,Lake Michigan,USA,bottled water,2.33,particles/L,North America
+Lake Huron 1|10.1371/journal.pone.0194970,Lake Huron,USA,bottled water,1.33,particles/L,North America
+Lake Erie 1|10.1371/journal.pone.0194970,Lake Erie,USA,bottled water,2.0,particles/L,North America
+Lake Erie 2|10.1371/journal.pone.0194970,Lake Erie,USA,bottled water,3.0,particles/L,North America
+Lake Ontario 1|10.1371/journal.pone.0194970,Lake Ontario,USA,bottled water,8.0,particles/L,North America
+Lake Ontario 2|10.1371/journal.pone.0194970,Lake Ontario,USA,bottled water,8.0,particles/L,North America
+Nethen.1|10.1016/j.sciotenv.2018.08.178,"Nethen, Belgium",Belgium,tap water,3.0,particles/L,Europe
+Nethen.2|10.1016/j.sciotenv.2018.08.178,"Nethen, Belgium",Belgium,tap water,0.0,particles/L,Europe
+Nethen.3|10.1016/j.sciotenv.2018.08.178,"Nethen, Belgium",Belgium,tap water,1.0,particles/L,Europe
+Nethen.4|10.1016/j.sciotenv.2018.08.178,"Nethen, Belgium",Belgium,tap water,0.0,particles/L,Europe
+Holdorf.1a|10.1016/j.sciotenv.2018.08.178,"Holdorf, Germany",Germany,tap water,7.0,particles/L,Europe
+Holdorf.1b|10.1016/j.sciotenv.2018.08.178,"Holdorf, Germany",Germany,tap water,0.0,particles/L,Europe
+Holdorf.2|10.1016/j.sciotenv.2018.08.178,"Holdorf, Germany",Germany,tap water,1.0,particles/L,Europe
+Holdorf.3|10.1016/j.sciotenv.2018.08.178,"Holdorf, Germany",Germany,tap water,3.0,particles/L,Europe
+Holdorf.4|10.1016/j.sciotenv.2018.08.178,"Holdorf, Germany",Germany,tap water,0.0,particles/L,Europe
+Grossenkneten.1|10.1016/j.sciotenv.2018.08.178,"Grossenkneten, Germany",Germany,tap water,0.0,particles/L,Europe
+Grossenkneten.2|10.1016/j.sciotenv.2018.08.178,"Grossenkneten, Germany",Germany,tap water,0.0,particles/L,Europe
+Grossenkneten.3|10.1016/j.sciotenv.2018.08.178,"Grossenkneten, Germany",Germany,tap water,0.0,particles/L,Europe
+Grossenkneten.4|10.1016/j.sciotenv.2018.08.178,"Grossenkneten, Germany",Germany,tap water,0.0,particles/L,Europe
+Sandelermoens.1|10.1016/j.sciotenv.2018.08.178,"Sandelermoens, Germany",Germany,tap water,0.0,particles/L,Europe
+Sandelermoens.2|10.1016/j.sciotenv.2018.08.178,"Sandelermoens, Germany",Germany,tap water,1.0,particles/L,Europe
+Sandelermoens.3|10.1016/j.sciotenv.2018.08.178,"Sandelermoens, Germany",Germany,tap water,1.0,particles/L,Europe
+Sandelermoens.4|10.1016/j.sciotenv.2018.08.178,"Sandelermoens, Germany",Germany,tap water,0.0,particles/L,Europe
+Thuelsfelde.1|10.1016/j.sciotenv.2018.08.178,"Thuelsfelde, Germany",Germany,tap water,0.0,particles/L,Europe
+Thuelsfelde.2|10.1016/j.sciotenv.2018.08.178,"Thuelsfelde, Germany",Germany,tap water,1.0,particles/L,Europe
+Thuelsfelde.3|10.1016/j.sciotenv.2018.08.178,"Thuelsfelde, Germany",Germany,tap water,1.0,particles/L,Europe
+Thuelsfelde.4|10.1016/j.sciotenv.2018.08.178,"Thuelsfelde, Germany",Germany,tap water,0.0,particles/L,Europe
+Holdorf.Well 1|10.1016/j.sciotenv.2018.08.178,"Holdorf, Germany",Germany,tap water,2.0,particles/L,Europe
+Holdorf.Well 2|10.1016/j.sciotenv.2018.08.178,"Holdorf, Germany",Germany,tap water,0.0,particles/L,Europe
+Holdorf.Well 3|10.1016/j.sciotenv.2018.08.178,"Holdorf, Germany",Germany,tap water,0.0,particles/L,Europe
+1|http://dce2.au.dk/pub/SR291.pdf,Knabrostræde (1210 Kbh. K),Denmark,tap water,29.0,particles/L,Europe
+1|http://dce2.au.dk/pub/SR291.pdf,Knabrostræde (1210 Kbh. K),Denmark,tap water,18.0,particles/L,Europe
+2|http://dce2.au.dk/pub/SR291.pdf,Eriksgade (1708 Kbh. V),Denmark,tap water,16.0,particles/L,Europe
+3|http://dce2.au.dk/pub/SR291.pdf,Blegdamsvej (2200 Kbh N),Denmark,tap water,12.0,particles/L,Europe
+4|http://dce2.au.dk/pub/SR291.pdf,Ernie Wilkins Vej (2450 Kbh S.),Denmark,tap water,13.0,particles/L,Europe
+5|http://dce2.au.dk/pub/SR291.pdf,Saunte Bygade (3100 Hornbæk),Denmark,tap water,7.0,particles/L,Europe
+6|http://dce2.au.dk/pub/SR291.pdf,Kolibrivej (4040 Jyllinge),Denmark,tap water,11.0,particles/L,Europe
+7|http://dce2.au.dk/pub/SR291.pdf,Østre Alle? (4800 Nykøbing F),Denmark,tap water,10.0,particles/L,Europe
+8|http://dce2.au.dk/pub/SR291.pdf,Ore Strandpark (4850 Stubbekøbing),Denmark,tap water,30.0,particles/L,Europe
+9|http://dce2.au.dk/pub/SR291.pdf,Villestofteheg-net (5210 Odense NV),Denmark,tap water,12.0,particles/L,Europe
+10|http://dce2.au.dk/pub/SR291.pdf,Lindehaven (5270 Odense),Denmark,tap water,13.0,particles/L,Europe
+11|http://dce2.au.dk/pub/SR291.pdf,Dagmargade 6000 Odense C),Denmark,tap water,11.0,particles/L,Europe
+12|http://dce2.au.dk/pub/SR291.pdf,Hjelmalle? (6200 Aabenra?),Denmark,tap water,27.0,particles/L,Europe
+13|http://dce2.au.dk/pub/SR291.pdf,Lundsbjerg Industrivej (6200 Aabenra?),Denmark,tap water,9.0,particles/L,Europe
+14|http://dce2.au.dk/pub/SR291.pdf,Kværsløkke (6300 Gråsten),Denmark,tap water,4.0,particles/L,Europe
+15|http://dce2.au.dk/pub/SR291.pdf,Aavangen (9575 Terndrup),Denmark,tap water,19.0,particles/L,Europe
+16|http://dce2.au.dk/pub/SR291.pdf,Gunnar Clausens vej (8260 Viby J.),Denmark,tap water,17.0,particles/L,Europe
+17|http://dce2.au.dk/pub/SR291.pdf,Kristtornvej (8200 Aarhus N.),Denmark,tap water,13.0,particles/L,Europe
+settled|10.1016/j.chemosphere.2021.132587,"Ontario, Canada",Canada,tap water,11.0,particles/L,North America
+filtered|10.1016/j.chemosphere.2021.132587,"Ontario, Canada",Canada,tap water,11.0,particles/L,North America
+clearwell|10.1016/j.chemosphere.2021.132587,"Ontario, Canada",Canada,tap water,31.0,particles/L,North America
+distribution|10.1016/j.chemosphere.2021.132587,"Ontario, Canada",Canada,tap water,20.0,particles/L,North America
+C|10.18520/cs/v117/i11/1874-1879,"Chennai, India",India,tap water,6.0,particles/L,Asia
+B1|10.18520/cs/v117/i11/1874-1879,"Chennai, India",India,tap water,5.0,particles/L,Asia
+B2|10.18520/cs/v117/i11/1874-1879,"Chennai, India",India,tap water,5.0,particles/L,Asia
+B3|10.18520/cs/v117/i11/1874-1879,"Chennai, India",India,tap water,5.0,particles/L,Asia
+B4|10.18520/cs/v117/i11/1874-1879,"Chennai, India",India,tap water,5.0,particles/L,Asia
+B5|10.18520/cs/v117/i11/1874-1879,"Chennai, India",India,tap water,2.0,particles/L,Asia
+Czech_Milence_DWTP|10.11001/jksww.2020.34.5.357,Czech Republic,Czech Republic,tap water,14.0,particles/L,Europe
+Czech_Plzen_DWTP|10.11001/jksww.2020.34.5.357,Czech Republic,Czech Republic,tap water,151.0,particles/L,Europe
+France|10.1016/j.cej.2020.128381,France,France,tap water,32.0,particles/L,Europe
+Finland|10.1016/j.cej.2020.128381,Finland,Finland,tap water,1.0,particles/L,Europe
+Finland|10.1016/j.cej.2020.128381,Finland,Finland,tap water,0.4,particles/L,Europe
+China|10.1016/j.cej.2020.128381,China,China,tap water,0.14,particles/L,Asia
+China|10.1016/j.cej.2020.128381,China,China,tap water,0.06,particles/L,Asia
+Korea|10.1016/j.cej.2020.128381,Korea,Korea,tap water,0.4,particles/L,Asia
+Korea|10.1016/j.cej.2020.128381,Korea,Korea,tap water,0.1,particles/L,Asia
+Korea|10.1016/j.cej.2020.128381,Korea,Korea,tap water,0.3,particles/L,Asia
+Finland2|10.1016/j.cej.2020.128381,Finland,Finland,tap water,2.5,particles/L,Europe
+HongKong|10.1016/j.cej.2020.128381,Hong Kong,Hong Kong,tap water,0.4,particles/L,Asia
+HongKong|10.1016/j.cej.2020.128381,Hong Kong,Hong Kong,tap water,0.27,particles/L,Asia
+UnitedStates|10.1016/j.cej.2020.128381,United States,USA,tap water,0.0008,particles/L,North America
+UnitedStates|10.1016/j.cej.2020.128381,United States,USA,tap water,2.43e-06,particles/L,North America
+UnitedStates2|10.1016/j.cej.2020.128381,United States,USA,tap water,0.009,particles/L,North America
+UnitedStates2|10.1016/j.cej.2020.128381,United States,USA,tap water,0.019,particles/L,North America
+UnitedStates2|10.1016/j.cej.2020.128381,United States,USA,tap water,0.047,particles/L,North America
+UnitedStates2|10.1016/j.cej.2020.128381,United States,USA,tap water,0.064,particles/L,North America
+UnitedStates2|10.1016/j.cej.2020.128381,United States,USA,tap water,0.092,particles/L,North America
+UnitedStates2|10.1016/j.cej.2020.128381,United States,USA,tap water,0.127,particles/L,North America
+Sarkar|10.1007/s11783-021-1492-5,"Ganga River, India",India,tap water,2.75,particles/L,Asia
+Dalmau-Soler|10.1007/s11783-021-1492-5,Spain,Spain,tap water,0.07,particles/L,Europe
+AverageAll|10.1016/j.envres.2022.112855,China,China,tap water,29.0,particles/L,Asia
+PE|10.1016/j.envpol.2021.117524,Warnow river,Germany,tap water,117.0,particles/L,Europe
+PP|10.1016/j.envpol.2021.117524,Warnow river,Germany,tap water,34.0,particles/L,Europe
+PS|10.1016/j.envpol.2021.117524,Warnow river,Germany,tap water,45.0,particles/L,Europe
+PET|10.1016/j.envpol.2021.117524,Warnow river,Germany,tap water,0.0,particles/L,Europe
+PVC|10.1016/j.envpol.2021.117524,Warnow river,Germany,tap water,0.0,particles/L,Europe
+others|10.1016/j.envpol.2021.117524,Warnow river,Germany,tap water,0.0,particles/L,Europe
+1|10.1016/j.sciotenv.2020.143421,Germany,Germany,tap water,0.0,particles/L,Europe
+1|10.1016/j.envpol.2020.114227,"Mexico City, Mexico; Transport Zone",Mexico,tap water,20.0,particles/L,North America
+2|10.1016/j.envpol.2020.114227,"Mexico City, Mexico; Market Zone",Mexico,tap water,13.0,particles/L,North America
+3|10.1016/j.envpol.2020.114227,"Mexico City, Mexico",Mexico,tap water,17.0,particles/L,North America
+4|10.1016/j.envpol.2020.114227,"Mexico City, Mexico",Mexico,tap water,14.0,particles/L,North America
+5|10.1016/j.envpol.2020.114227,"Mexico City, Mexico; Commercial Zone",Mexico,tap water,60.0,particles/L,North America
+6|10.1016/j.envpol.2020.114227,"Mexico City, Mexico",Mexico,tap water,13.0,particles/L,North America
+7|10.1016/j.envpol.2020.114227,"Mexico City, Mexico; Transport Zone",Mexico,tap water,15.0,particles/L,North America
+8|10.1016/j.envpol.2020.114227,"Mexico City, Mexico",Mexico,tap water,18.0,particles/L,North America
+9|10.1016/j.envpol.2020.114227,"Mexico City, Mexico; Market Zone",Mexico,tap water,37.0,particles/L,North America
+10|10.1016/j.envpol.2020.114227,"Mexico City, Mexico; Tourism Zone",Mexico,tap water,34.0,particles/L,North America
+11|10.1016/j.envpol.2020.114227,"Mexico City, Mexico; Tourism Zone",Mexico,tap water,38.0,particles/L,North America
+12|10.1016/j.envpol.2020.114227,"Mexico City, Mexico; Tourism Zone",Mexico,tap water,60.0,particles/L,North America
+13|10.1016/j.envpol.2020.114227,"Mexico City, Mexico",Mexico,tap water,7.0,particles/L,North America
+14|10.1016/j.envpol.2020.114227,"Mexico City, Mexico; Transport Zone",Mexico,tap water,25.0,particles/L,North America
+15|10.1016/j.envpol.2020.114227,"Mexico City, Mexico; Transport Zone",Mexico,tap water,22.0,particles/L,North America
+16|10.1016/j.envpol.2020.114227,"Mexico City, Mexico",Mexico,tap water,15.0,particles/L,North America
+17|10.1016/j.envpol.2020.114227,"Mexico City, Mexico; Hospital Zone",Mexico,tap water,7.0,particles/L,North America
+18|10.1016/j.envpol.2020.114227,"Mexico City, Mexico",Mexico,tap water,37.0,particles/L,North America
+19|10.1016/j.envpol.2020.114227,"Mexico City, Mexico; Hospital Zone",Mexico,tap water,9.0,particles/L,North America
+20|10.1016/j.envpol.2020.114227,"Mexico City, Mexico; Commercial Zone",Mexico,tap water,6.0,particles/L,North America
+21|10.1016/j.envpol.2020.114227,"Mexico City, Mexico; Recreation Zone",Mexico,tap water,7.0,particles/L,North America
+22|10.1016/j.envpol.2020.114227,"Mexico City, Mexico; Education Zone",Mexico,tap water,8.0,particles/L,North America
+23|10.1016/j.envpol.2020.114227,"Mexico City, Mexico",Mexico,tap water,14.0,particles/L,North America
+24|10.1016/j.envpol.2020.114227,"Mexico City, Mexico",Mexico,tap water,8.0,particles/L,North America
+25|10.1016/j.envpol.2020.114227,"Mexico City, Mexico",Mexico,tap water,8.0,particles/L,North America
+26|10.1016/j.envpol.2020.114227,"Mexico City, Mexico; Market Zone",Mexico,tap water,7.0,particles/L,North America
+27|10.1016/j.envpol.2020.114227,"Mexico City, Mexico",Mexico,tap water,13.0,particles/L,North America
+28|10.1016/j.envpol.2020.114227,"Mexico City, Mexico; Education Zone",Mexico,tap water,8.0,particles/L,North America
+29|10.1016/j.envpol.2020.114227,"Mexico City, Mexico; Transport Zone",Mexico,tap water,6.0,particles/L,North America
+30|10.1016/j.envpol.2020.114227,"Mexico City, Mexico; Transport Zone",Mexico,tap water,10.0,particles/L,North America
+31|10.1016/j.envpol.2020.114227,"Mexico City, Mexico; Commercial Zone",Mexico,tap water,23.0,particles/L,North America
+32|10.1016/j.envpol.2020.114227,"Mexico City, Mexico",Mexico,tap water,15.0,particles/L,North America
+33|10.1016/j.envpol.2020.114227,"Mexico City, Mexico; Education Zone",Mexico,tap water,13.0,particles/L,North America
+34|10.1016/j.envpol.2020.114227,"Mexico City, Mexico; Recreation Zone",Mexico,tap water,9.0,particles/L,North America
+35|10.1016/j.envpol.2020.114227,"Mexico City, Mexico; Tourism Zone",Mexico,tap water,10.0,particles/L,North America
+36|10.1016/j.envpol.2020.114227,"Mexico City, Mexico",Mexico,tap water,28.0,particles/L,North America
+37|10.1016/j.envpol.2020.114227,"Mexico City, Mexico",Mexico,tap water,5.0,particles/L,North America
+38|10.1016/j.envpol.2020.114227,"Mexico City, Mexico; Education Zone",Mexico,tap water,8.0,particles/L,North America
+39|10.1016/j.envpol.2020.114227,"Mexico City, Mexico; Commercial Zone",Mexico,tap water,10.0,particles/L,North America
+40|10.1016/j.envpol.2020.114227,"Mexico City, Mexico; Commercial Zone",Mexico,tap water,7.0,particles/L,North America
+41|10.1016/j.envpol.2020.114227,"Mexico City, Mexico; Commercial Zone",Mexico,tap water,7.0,particles/L,North America
+42|10.1016/j.envpol.2020.114227,"Mexico City, Mexico",Mexico,tap water,91.0,particles/L,North America
+1|10.1007/s11356-021-12467-y,"Baden-Wurttemberg, Germany",Germany,tap water,66.0,particles/L,Europe
+drinking_water|10.3390/w12113115,"Sinos River Basin, Rio Grande, Brazil",Brazil,tap water,105.8,particles/L,South America
+Pivokonsky2|10.1016/j.cotox.2021.09.003,"Reservoir Water, Czech Republic",Czech Republic,tap water,151.0,particles/L,Europe
+Lao Shann|10.1016/j.jwpe.2020.101884,China,China,bottled water,5.0,particles/L,Asia
+VOSS|10.1016/j.jwpe.2020.101884,China,China,bottled water,17.0,particles/L,Asia
+Master_kong|10.1016/j.jwpe.2020.101884,China,China,bottled water,18.0,particles/L,Asia
+Kun_Lun_Shan|10.1016/j.jwpe.2020.101884,China,China,bottled water,22.0,particles/L,Asia
+Wahaha|10.1016/j.jwpe.2020.101884,China,China,bottled water,14.0,particles/L,Asia
+C'estbon|10.1016/j.jwpe.2020.101884,China,China,bottled water,5.0,particles/L,Asia
+Run_Tian_Cui|10.1016/j.jwpe.2020.101884,China,China,bottled water,7.0,particles/L,Asia
+Ever_Grande|10.1016/j.jwpe.2020.101884,China,China,bottled water,4.0,particles/L,Asia
+Ocean_AQUA|10.1016/j.jwpe.2020.101884,China,China,bottled water,2.0,particles/L,Asia
+Ganten_Mineral_Water|10.1016/j.jwpe.2020.101884,China,China,bottled water,6.0,particles/L,Asia
+Nong_Fu|10.1016/j.jwpe.2020.101884,China,China,bottled water,9.0,particles/L,Asia
+Tibet_Ge_Sang|10.1016/j.jwpe.2020.101884,China,China,bottled water,5.0,particles/L,Asia
+ALKAO.UA|10.1016/j.jwpe.2020.101884,China,China,bottled water,12.0,particles/L,Asia
+Ban_Ma|10.1016/j.jwpe.2020.101884,China,China,bottled water,14.0,particles/L,Asia
+Shi_Lin|10.1016/j.jwpe.2020.101884,China,China,bottled water,7.0,particles/L,Asia
+LAVA|10.1016/j.jwpe.2020.101884,China,China,bottled water,7.0,particles/L,Asia
+Watsons|10.1016/j.jwpe.2020.101884,China,China,bottled water,16.0,particles/L,Asia
+Hui_Shan_Gu|10.1016/j.jwpe.2020.101884,China,China,bottled water,3.0,particles/L,Asia
+Nong_Shi|10.1016/j.jwpe.2020.101884,China,China,bottled water,3.0,particles/L,Asia
+Jin_Mai_lang|10.1016/j.jwpe.2020.101884,China,China,bottled water,5.0,particles/L,Asia
+Ganten_Purified_Water|10.1016/j.jwpe.2020.101884,China,China,bottled water,2.0,particles/L,Asia
+Nestle_Pure_Life|10.1016/j.jwpe.2020.101884,China,China,bottled water,22.0,particles/L,Asia
+Tian_Di_Jing_Hua|10.1016/j.jwpe.2020.101884,China,China,bottled water,8.0,particles/L,Asia
+Raw|10.1007/s11356-021-13220-1,"Llobregat River Basin, Germany",Germany,tap water,1.0,particles/L,Europe
+Sand|10.1007/s11356-021-13220-1,"Llobregat River Basin, Germany",Germany,tap water,0.2,particles/L,Europe
+GAC|10.1007/s11356-021-13220-1,"Llobregat River Basin, Germany",Germany,tap water,0.2,particles/L,Europe
+Reverse_Osmosis|10.1007/s11356-021-13220-1,"Llobregat River Basin, Germany",Germany,tap water,0.1,particles/L,Europe
+Finished|10.1007/s11356-021-13220-1,"Llobregat River Basin, Germany",Germany,tap water,0.1,particles/L,Europe
+B_Well|10.22630/PNIKS.2019.28.4.59,"Riobamba City, Ecuador",Ecuador,tap water,3.0,particles/L,South America
+C_Well|10.22630/PNIKS.2019.28.4.59,"Riobamba City, Ecuador",Ecuador,tap water,2.0,particles/L,South America
+G_Well|10.22630/PNIKS.2019.28.4.59,"Riobamba City, Ecuador",Ecuador,tap water,2.0,particles/L,South America
+D_Reserve_Tank|10.22630/PNIKS.2019.28.4.59,"Riobamba City, Ecuador",Ecuador,tap water,1.0,particles/L,South America
+I_Reserve_Tank|10.22630/PNIKS.2019.28.4.59,"Riobamba City, Ecuador",Ecuador,tap water,2.0,particles/L,South America
+K_Reserve_Tank|10.22630/PNIKS.2019.28.4.59,"Riobamba City, Ecuador",Ecuador,tap water,1.0,particles/L,South America
+N_Reserve_Tank|10.22630/PNIKS.2019.28.4.59,"Riobamba City, Ecuador",Ecuador,tap water,1.0,particles/L,South America
+F_Distribution_Network|10.22630/PNIKS.2019.28.4.59,"Riobamba City, Ecuador",Ecuador,tap water,1.0,particles/L,South America
+N_Distribution_Network|10.22630/PNIKS.2019.28.4.59,"Riobamba City, Ecuador",Ecuador,tap water,1.0,particles/L,South America
+C_Hydrant|10.22630/PNIKS.2019.28.4.59,"Riobamba City, Ecuador",Ecuador,tap water,1.0,particles/L,South America
+D_Hydrant|10.22630/PNIKS.2019.28.4.59,"Riobamba City, Ecuador",Ecuador,tap water,1.0,particles/L,South America
+I_Hydrant|10.22630/PNIKS.2019.28.4.59,"Riobamba City, Ecuador",Ecuador,tap water,1.0,particles/L,South America
+Australia1|10.3390/app112110109,Australia,Australia,tap water,1.5,particles/L,Oceania
+Australia2|10.3390/app112110109,Australia,Australia,tap water,0.48,particles/L,Oceania
+Australia3|10.3390/app112110109,Australia,Australia,tap water,0.28,particles/L,Oceania
+Australia4|10.3390/app112110109,Australia,Australia,tap water,0.18,particles/L,Oceania
+Australia5|10.3390/app112110109,Australia,Australia,tap water,0.96,particles/L,Oceania
+Australia6|10.3390/app112110109,Australia,Australia,tap water,0.91,particles/L,Oceania
+Australia7|10.3390/app112110109,Australia,Australia,tap water,2.76,particles/L,Oceania
+Canada1|10.3390/app112110109,Canada,Canada,tap water,0.5,particles/L,North America
+Canada2|10.3390/app112110109,Canada,Canada,tap water,1.76,particles/L,North America
+China1|10.3390/app112110109,China,China,tap water,28.4,particles/L,Asia
+China2|10.3390/app112110109,China,China,tap water,0.13,particles/L,Asia
+China3|10.3390/app112110109,China,China,tap water,0.05,particles/L,Asia
+China4|10.3390/app112110109,China,China,tap water,2.7,particles/L,Asia
+China5|10.3390/app112110109,China,China,tap water,0.3,particles/L,Asia
+China6|10.3390/app112110109,China,China,tap water,0.6,particles/L,Asia
+China7|10.3390/app112110109,China,China,tap water,0.59,particles/L,Asia
+China8|10.3390/app112110109,China,China,tap water,0.59,particles/L,Asia
+China9|10.3390/app112110109,China,China,tap water,30.6,particles/L,Asia
+China10|10.3390/app112110109,China,China,tap water,1.72,particles/L,Asia
+China11|10.3390/app112110109,China,China,tap water,22.9,particles/L,Asia
+China12|10.3390/app112110109,China,China,tap water,2.9,particles/L,Asia
+China13|10.3390/app112110109,China,China,tap water,7.9,particles/L,Asia
+China14|10.3390/app112110109,China,China,tap water,30.3,particles/L,Asia
+China15|10.3390/app112110109,China,China,tap water,14.3,particles/L,Asia
+China16|10.3390/app112110109,China,China,tap water,8.25,particles/L,Asia
+China17|10.3390/app112110109,China,China,tap water,0.24,particles/L,Asia
+China18|10.3390/app112110109,China,China,tap water,0.34,particles/L,Asia
+China19|10.3390/app112110109,China,China,tap water,20.96,particles/L,Asia
+China20|10.3390/app112110109,China,China,tap water,31.85,particles/L,Asia
+China21|10.3390/app112110109,China,China,tap water,40.67,particles/L,Asia
+China22|10.3390/app112110109,China,China,tap water,20.44,particles/L,Asia
+China23|10.3390/app112110109,China,China,tap water,0.78,particles/L,Asia
+China24|10.3390/app112110109,China,China,tap water,0.62,particles/L,Asia
+China25|10.3390/app112110109,China,China,tap water,0.1,particles/L,Asia
+China26|10.3390/app112110109,China,China,tap water,0.07,particles/L,Asia
+China27|10.3390/app112110109,China,China,tap water,0.0,particles/L,Asia
+China28|10.3390/app112110109,China,China,tap water,0.0,particles/L,Asia
+Denmark1|10.3390/app112110109,Denmark,Denmark,tap water,120.3,particles/L,Europe
+Finland1|10.3390/app112110109,Finland,Finland,tap water,1.05,particles/L,Europe
+Finland2|10.3390/app112110109,Finland,Finland,tap water,13.5,particles/L,Europe
+Finland3|10.3390/app112110109,Finland,Finland,tap water,0.03,particles/L,Europe
+Finland4|10.3390/app112110109,Finland,Finland,tap water,0.005,particles/L,Europe
+Finland5|10.3390/app112110109,Finland,Finland,tap water,0.1,particles/L,Europe
+Finland6|10.3390/app112110109,Finland,Finland,tap water,0.02,particles/L,Europe
+Finland7|10.3390/app112110109,Finland,Finland,tap water,6.84,particles/L,Europe
+France1|10.3390/app112110109,France,France,tap water,35.0,particles/L,Europe
+France2|10.3390/app112110109,France,France,tap water,2.84,particles/L,Europe
+Germany1|10.3390/app112110109,Germany,Germany,tap water,1.82,particles/L,Europe
+Germany2|10.3390/app112110109,Germany,Germany,tap water,5.9,particles/L,Europe
+Germany3|10.3390/app112110109,Germany,Germany,tap water,3.0,particles/L,Europe
+Germany4|10.3390/app112110109,Germany,Germany,tap water,7.0,particles/L,Europe
+Germany5|10.3390/app112110109,Germany,Germany,tap water,14.0,particles/L,Europe
+HingKong1|10.3390/app112110109,Hong Kong,China,tap water,0.27,particles/L,Asia
+HingKong2|10.3390/app112110109,Hong Kong,China,tap water,0.4,particles/L,Asia
+Iran1|10.3390/app112110109,Iran,Iran,tap water,0.42,particles/L,Asia
+Iran2|10.3390/app112110109,Iran,Iran,tap water,1.91,particles/L,Asia
+Iran3|10.3390/app112110109,Iran,Iran,tap water,2.11,particles/L,Asia
+Iran4|10.3390/app112110109,Iran,Iran,tap water,0.58,particles/L,Asia
+Israel1|10.3390/app112110109,Israel,Israel,tap water,1.97,particles/L,Asia
+Israel2|10.3390/app112110109,Israel,Israel,tap water,7.3,particles/L,Asia
+Italy1|10.3390/app112110109,Italy,Italy,tap water,0.4,particles/L,Europe
+Italy2|10.3390/app112110109,Italy,Italy,tap water,0.52,particles/L,Europe
+Italy3|10.3390/app112110109,Italy,Italy,tap water,0.2,particles/L,Europe
+Korea1|10.3390/app112110109,Korea,Korea,tap water,0.44,particles/L,Asia
+Korea2|10.3390/app112110109,Korea,Korea,tap water,0.14,particles/L,Asia
+Korea3|10.3390/app112110109,Korea,Korea,tap water,0.28,particles/L,Asia
+Korea4|10.3390/app112110109,Korea,Korea,tap water,0.11,particles/L,Asia
+Netherlands1|10.3390/app112110109,Netherlands,Netherlands,tap water,39.0,particles/L,Europe
+Netherlands2|10.3390/app112110109,Netherlands,Netherlands,tap water,61.0,particles/L,Europe
+Netherlands3|10.3390/app112110109,Netherlands,Netherlands,tap water,65.0,particles/L,Europe
+Netherlands4|10.3390/app112110109,Netherlands,Netherlands,tap water,81.0,particles/L,Europe
+Netherlands5|10.3390/app112110109,Netherlands,Netherlands,tap water,56.0,particles/L,Europe
+Netherlands6|10.3390/app112110109,Netherlands,Netherlands,tap water,55.0,particles/L,Europe
+Netherlands7|10.3390/app112110109,Netherlands,Netherlands,tap water,55.0,particles/L,Europe
+Poland1|10.3390/app112110109,Poland,Poland,tap water,0.34,particles/L,Europe
+Russia1|10.3390/app112110109,Russia,Russia,tap water,148.0,particles/L,Europe
+Scotland1|10.3390/app112110109,Scotland,Scotland,tap water,0.25,particles/L,Europe
+Scotland2|10.3390/app112110109,Scotland,Scotland,tap water,1.0,particles/L,Europe
+SouthKorea1|10.3390/app112110109,South Korea,South Korea,tap water,49.0,particles/L,Asia
+SouthKorea2|10.3390/app112110109,South Korea,South Korea,tap water,33.0,particles/L,Asia
+SouthKorea4|10.3390/app112110109,South Korea,South Korea,tap water,66.0,particles/L,Asia
+Spain1|10.3390/app112110109,Spain,Spain,tap water,0.31,particles/L,Europe
+Spain2|10.3390/app112110109,Spain,Spain,tap water,0.44,particles/L,Europe
+Spain3|10.3390/app112110109,Spain,Spain,tap water,0.92,particles/L,Europe
+Spain4|10.3390/app112110109,Spain,Spain,tap water,1.08,particles/L,Europe
+Spain5|10.3390/app112110109,Spain,Spain,tap water,12.8,particles/L,Europe
+Spain6|10.3390/app112110109,Spain,Spain,tap water,41.77,particles/L,Europe
+Spain7|10.3390/app112110109,Spain,Spain,tap water,16.4,particles/L,Europe
+Spain8|10.3390/app112110109,Spain,Spain,tap water,131.36,particles/L,Europe
+Spain9|10.3390/app112110109,Spain,Spain,tap water,0.98,particles/L,Europe
+Sweden1|10.3390/app112110109,Sweden,Sweden,tap water,4.0,particles/L,Europe
+Sweden2|10.3390/app112110109,Sweden,Sweden,tap water,0.008,particles/L,Europe
+Thailand1|10.3390/app112110109,Thailand,Thailand,tap water,2.0,particles/L,Asia
+Turkey1|10.3390/app112110109,Turkey,Turkey,tap water,7.0,particles/L,Asia
+Turkey2|10.3390/app112110109,Turkey,Turkey,tap water,4.11,particles/L,Asia
+Turkey3|10.3390/app112110109,Turkey,Turkey,tap water,1.6,particles/L,Asia
+Turkey4|10.3390/app112110109,Turkey,Turkey,tap water,0.7,particles/L,Asia
+Turkey5|10.3390/app112110109,Turkey,Turkey,tap water,0.6,particles/L,Asia
+UK1|10.3390/app112110109,UK,UK,tap water,15.7,particles/L,Europe
+USA1|10.3390/app112110109,USA,USA,tap water,3.7,particles/L,North America
+USA2|10.3390/app112110109,USA,USA,tap water,17.6,particles/L,North America
+USA3|10.3390/app112110109,USA,USA,tap water,17.2,particles/L,North America
+USA4|10.3390/app112110109,USA,USA,tap water,0.09,particles/L,North America
+USA5|10.3390/app112110109,USA,USA,tap water,0.05,particles/L,North America
+USA6|10.3390/app112110109,USA,USA,tap water,5.9,particles/L,North America
+USA7|10.3390/app112110109,USA,USA,tap water,2.6,particles/L,North America
+USA8|10.3390/app112110109,USA,USA,tap water,0.098,particles/L,North America
+USA9|10.3390/app112110109,USA,USA,tap water,0.00088,particles/L,North America
+27.11.2019|10.1016/j.jhazmat.2021.125347,"Kolkata, India",India,tap water,2.71,particles/L,Asia
+21.12.2019|10.1016/j.jhazmat.2021.125347,"Kolkata, India",India,tap water,2.56,particles/L,Asia
+22.01.2020|10.1016/j.jhazmat.2021.125347,"Kolkata, India",India,tap water,2.4,particles/L,Asia
+19.02.2020|10.1016/j.jhazmat.2021.125347,"Kolkata, India",India,tap water,2.85,particles/L,Asia
+16.03.2020|10.1016/j.jhazmat.2021.125347,"Kolkata, India",India,tap water,3.23,particles/L,Asia
+Milence|10.1016/j.scitotenv.2020.140236,"Uhlava River, Czech Republic",Czech Republic,tap water,2.8,particles/L,Europe
+Milence|10.1016/j.scitotenv.2020.140236,"Uhlava River, Czech Republic",Czech Republic,tap water,17.0,particles/L,Europe
+Plzen|10.1016/j.scitotenv.2020.140236,"Uhlava River, Czech Republic",Czech Republic,tap water,12.0,particles/L,Europe
+A|10.1016/j.chemosphere.2020.126493,China,China,tap water,125.0,particles/L,Asia
+A|10.1016/j.chemosphere.2020.126493,China,China,tap water,0.0,particles/L,Asia
+A|10.1016/j.chemosphere.2020.126493,China,China,tap water,125.0,particles/L,Asia
+A|10.1016/j.chemosphere.2020.126493,China,China,tap water,0.0,particles/L,Asia
+1|10.1016/j.scitotenv.2022.154015,South Korea,South Korea,tap water,0.2,particles/L,Asia

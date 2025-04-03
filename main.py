@@ -3,42 +3,49 @@ import time
 import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
+import pycountry_convert as pc
+
+country_fixes = {               # So that pycountry_convert doesn't mark these countries as Unknown
+    "UK": "United Kingdom",
+    "Scotland": "United Kingdom",
+    "England": "United Kingdom",
+    "Korea": "South Korea",
+}
+
+# Convert countries to continent for additional column
+def get_continent(country_name):
+    try:
+        # Make any fixes
+        country_name = country_fixes.get(country_name, country_name)
+        # Convert country to corresponding continent
+        country_code = pc.country_name_to_country_alpha2(country_name, cn_name_format="default")
+        continent_code = pc.country_alpha2_to_continent_code(country_code)
+        # Map continent codes to full continent names
+        continent_name = {
+            "AF": "Africa",
+            "AS": "Asia",
+            "EU": "Europe",
+            "NA": "North America",
+            "SA": "South America",
+            "OC": "Oceania"
+        }
+        return continent_name.get(continent_code, "Unknown")
+    except:
+        print("Unknown: ",country_name)
+        return "Unknown"
 
 ms = time.time()
-df = pd.read_csv("samples_geocoded.csv")
-# list of unneeded columns to remove
-cols_to_remove = [
-    "DOI", "Subsample_ID", "Color_Transparent", "Color_Blue", "Color_Red", "Color_Brown", "Color_Green", "Color_Orange", "Color_White",
-    "Color_Yellow", "Color_Pink", "Color_Black", "Color_Other",
+# Use only columns we need
+df = pd.read_csv("samples_geocoded.csv", usecols=["Sample_ID","Location","Countries","Source","Concentration","Concentration_Units"])
 
-    "Material_PEST", "Material_PE", "Material_PP", "Material_PA", "Material_PE_PS", "Material_PS", "Material_CA",
-    "Material_PVC", "Material_ER", "Material_PAM", "Material_PET", "Material_PlasticAdditive", "Material_PBT",
-    "Material_PU", "Material_PET_PEST", "Material_PAN", "Material_Silicone", "Material_Acrylic", "Material_Vinyl",
-    "Material_Vinyon", "Material_Other", "Material_PA_ER", "Material_PTT", "Material_PE_PP", "Material_PPS",
-    "Material_Rayon", "Material_PAA", "Material_PMPS", "Material_PI", "Material_Olefin", "Material_Styrene_Butadiene",
-    "Material_PBA", "Material_PMMA", "Material_Cellophane", "Material_SAN", "Material_PC", "Material_PDMS",
-    "Material_PLA", "Material_PTFE", "Material_SBR", "Material_PET_Olefin", "Material_PES", "Material_ABS",
-    "Material_LDPE", "Material_PEVA", "Material_AR", "Material_PVA", "Material_PPE",
-
-    "Morphology_Fragment", "Morphology_Fiber", "Morphology_Nurdle", "Morphology_Film", "Morphology_Foam",
-    "Morphology_Sphere", "Morphology_Line", "Morphology_Bead", "Morphology_Sheet", "Morphology_Film_Fragment",
-    "Morphology_Rubbery_Fragment",
-
-    "Size_3000um", "Size_2_5mm", "Size_1_5mm", "Size_1_2mm", "Size_0.5_1mm", "Size_less_than_0.5mm", "Size_500um",
-    "Size_300_500um", "Size_125_300um", "Size_100_500um", "Size_greater_than_100um", "Size_50_150um",
-    "Size_50_100um", "Size_50um", "Size_45_125um", "Size_greater_than_25um", "Size_20um_5mm", "Size_20_100um",
-    "Size_20_50um", "Size_10_50um", "Size_10_45um", "Size_10_20um", "Size_greater_than_10um", "Size_8_316um",
-    "Size_5_100um", "Size_5_10um", "Size_4_10um", "Size_1.5_5um", "Size_less_than_1.5um", "Size_1_100um",
-    "Size_1_50um", "Size_1_10um", "Size_1_5um", "Size_110_124nm", "Size_0_20um",
-
-    "Approximate_Latitude", "Approximate_Longitude" ]
-
-df.drop(columns=cols_to_remove, axis=1, inplace=True)
-
-# remove NA values
+# Remove NA values
 df.dropna(axis=0, subset=["Countries", "Concentration", "Source"], how="any", inplace=True)
 
-df.info() # info about dataframe
+# Create continent column
+df["Continent"] = df["Countries"].apply(get_continent)
+
+df.info() # Info about dataframe
+print()
 
 # Convert 'Concentration' column to numeric (in order to remove those that are not a number)
 df["Concentration"] = pd.to_numeric(df["Concentration"], errors="coerce")
@@ -69,42 +76,111 @@ for x in df["Concentration_Units"].to_list():
         # Assuming an average bottle holds around .5 liter
         concentrations[i] = concentrations[i]*2
     
-    # Add to averages for bar charts
-    if sources[i] == "bottled water":
-        bottled_avg+=concentrations[i]
-    else:
-        tap_avg+=concentrations[i]
-    i+=1
-    
-bottled_avg = bottled_avg/df["Source"].size
-tap_avg = tap_avg/df["Source"].size
-print("bottled avg",bottled_avg)
-print("tap avg",tap_avg)
-print()
+    # # Add to averages for bar charts      # Opted for method .mean() to find avg TODO Discuss if valid
+    # if sources[i] == "bottled water":
+    #     bottled_avg+=concentrations[i]
+    # else:
+    #     tap_avg+=concentrations[i]
+    # i+=1
 
 # Replace with new converted units, all now in particles/L
 df["Concentration"] = concentrations
 df["Concentration_Units"] = "particles/L"
 
+
+# Drop major outliers in concentration using IQR
+# TODO Discuss if this is reasonable
+Q1 = df["Concentration"].quantile(0.25)
+Q3 = df["Concentration"].quantile(0.75)
+IQR = Q3 - Q1
+
+# Bounds for outliers
+lower_bound = Q1 - 1.5 * IQR
+upper_bound = Q3 + 1.5 * IQR
+intial_rows = len(df)
+
+df = df[(df["Concentration"] >= lower_bound) & (df["Concentration"] <= upper_bound)]
+
+# Check how many rows were removed
+print(f"Outlier rows removed: {intial_rows - len(df)}")
+print(f"Remaining rows: {len(df)}")
+print()
+
+
+# Averages for bottled and tap concentrations
+# Filter only water data
+df_tap = df[df["Source"] == "tap water"]
+df_bottled = df[df["Source"] == "bottled water"]
+
+# Calculate averages
+bottled_avg = np.mean(df_bottled["Concentration"])
+tap_avg = np.mean(df_tap["Concentration"])
+
+print("Bottled Average: ",bottled_avg)
+print("Tap Average: ",tap_avg)
+print()
+
+# Time
 n = (time.time() - ms)
 print("In seconds:",n)
 
-# Bar chart comparing bottled vs tap water
-plt.figure(figsize=(6, 6))
-#plt.bar(df["Source"], df["Concentration"])
-plt.bar(df["Countries"], df["Concentration"])
+# Create/update csv for cleaned up data
+# df.to_csv("output.csv",index=False)
+
+# Bar chart comparing countries and average concentration
+# Filter out entries with only 'UK' as country TODO Discuss any alternative solutions
+df_filtered = df[df["Countries"] != "UK"]
+# Group data by country and calculate average concentration
+avg_concen_by_country = df_filtered.groupby("Countries")["Concentration"].mean()
+x = avg_concen_by_country.index     # Countries
+y = avg_concen_by_country.values    # Average concentrations
+
+plt.figure(figsize=(5, 5))
+plt.bar(x, y, color='cornflowerblue')   # TODO Discuss color choices :)
 plt.title('Countries and Concentration')
 plt.xlabel('Country')
 plt.ylabel('Concentration (particles/Liter)')
+plt.xticks(rotation=45, ha="right") # Make country names readable by rotating 45 degrees and setting horizontal alignment to right
 plt.show()
 
-df.to_csv("output.csv",index=False)
-
-x = ['Tap', 'Bottled']
+# Bar chart comparing bottled vs tap water
+x = ['Tap Water', 'Bottled Water']
 y = [tap_avg, bottled_avg]
 
-plt.bar(x, y)
-plt.title('Tap vs Bottled water contaminant amount')
+plt.bar(x, y, color=['skyblue', 'lightcoral'])
+plt.title('Average Microplastic Concentration in Drinking Water')
 plt.xlabel('Water Source')
-plt.ylabel('Particles/Liter')
+plt.ylabel('Concentration (particles/L)')
+plt.show()
+
+# Bar chart with error bars (based on standard deviation) to represent uncertainty
+# TODO Discuss if this is preferred over previous bar chart
+std_concentration = df.groupby("Source")["Concentration"].std()
+plt.bar(x, y, yerr=std_concentration, capsize=5, color=['skyblue', 'lightcoral'])
+plt.title('Average Microplastic Concentration (with Standard Deviation)')
+plt.xlabel('Water Source')
+plt.ylabel('Concentration (particles/L)')
+plt.show()
+
+# Bar chart comparing average concentration by continent
+# TODO Discuss if this is a useful visualization
+avg_concen_by_cont = df.groupby("Continent")["Concentration"].mean()
+x = avg_concen_by_cont.index    # Continents
+y = avg_concen_by_cont.values   # Average concentrations
+
+plt.figure(figsize=(5, 5))
+plt.bar(x, y, color='cornflowerblue')
+plt.title('Average Microplastic Concentration by Continent')
+plt.xlabel('Continent')
+plt.ylabel('Average Concentration (particles/L)')
+plt.xticks(rotation=45)
+plt.show()
+
+# Kernel Density Estimate (KDE) plot/density curve comparing density of concentration in tap vs bottled
+sns.kdeplot(df[df["Source"] == "tap water"]["Concentration"], label="Tap Water", fill=True)
+sns.kdeplot(df[df["Source"] == "bottled water"]["Concentration"], label="Bottled Water", fill=True)
+plt.title("Density Curve of Microplastic Concentration")
+plt.xlabel("Concentration (particles/L)")
+plt.ylabel("Density")
+plt.legend()
 plt.show()
