@@ -5,6 +5,9 @@ import seaborn as sns
 import numpy as np
 import pycountry_convert as pc
 
+# Microplastics Data Analysis
+# By Scott Baroni and Landon Escorcio at Cal State Polytechnic - Pomona
+
 country_fixes = {               # So that pycountry_convert doesn't mark these countries as Unknown
     "UK": "United Kingdom",
     "Scotland": "United Kingdom",
@@ -127,27 +130,12 @@ print("In seconds:",n)
 # Create/update csv for cleaned up data
 # df.to_csv("output.csv",index=False)
 
-# Bar chart comparing countries and average concentration
-# Filter out entries with only 'UK' as country TODO Discuss any alternative solutions
-df_filtered = df[df["Countries"] != "UK"]
-# Group data by country and calculate average concentration
-avg_concen_by_country = df_filtered.groupby("Countries")["Concentration"].mean()
-x = avg_concen_by_country.index     # Countries
-y = avg_concen_by_country.values    # Average concentrations
-
-plt.figure(figsize=(5, 5))
-plt.bar(x, y, color='cornflowerblue')   # TODO Discuss color choices :)
-plt.title('Countries and Concentration')
-plt.xlabel('Country')
-plt.ylabel('Concentration (particles/Liter)')
-plt.xticks(rotation=45, ha="right") # Make country names readable by rotating 45 degrees and setting horizontal alignment to right
-plt.show()
-
 # Bar chart comparing bottled vs tap water
 x = ['Tap Water', 'Bottled Water']
 y = [tap_avg, bottled_avg]
 
-plt.bar(x, y, color=['skyblue', 'lightcoral'])
+plt.figure(figsize=(12, 7))
+plt.bar(x, y, color=['skyblue', 'cornflowerblue'])
 plt.title('Average Microplastic Concentration in Drinking Water')
 plt.xlabel('Water Source')
 plt.ylabel('Concentration (particles/L)')
@@ -156,10 +144,28 @@ plt.show()
 # Bar chart with error bars (based on standard deviation) to represent uncertainty
 # TODO Discuss if this is preferred over previous bar chart
 std_concentration = df.groupby("Source")["Concentration"].std()
-plt.bar(x, y, yerr=std_concentration, capsize=5, color=['skyblue', 'lightcoral'])
+plt.figure(figsize=(12, 7))
+plt.bar(x, y, yerr=std_concentration, capsize=5, color=['skyblue', 'cornflowerblue'])
 plt.title('Average Microplastic Concentration (with Standard Deviation)')
 plt.xlabel('Water Source')
 plt.ylabel('Concentration (particles/L)')
+plt.show()
+
+# Bar chart comparing countries and average concentration
+# Filter out entries with only 'UK' as country TODO Discuss any alternative solutions
+df_filtered = df[df["Countries"] != "UK"]
+# Group data by country and calculate average concentration
+avg_concen_by_country = df_filtered.groupby("Countries")["Concentration"].mean()
+x = avg_concen_by_country.index     # Countries
+y = avg_concen_by_country.values    # Average concentrations
+
+plt.figure(figsize=(12, 7))
+plt.bar(x, y, color='cornflowerblue')   # TODO Discuss color choices :)
+plt.title('Countries and Concentration')
+plt.xlabel('Country')
+plt.ylabel('Concentration (particles/Liter)')
+plt.xticks(rotation=45, ha="right") # Make country names readable by rotating 45 degrees and setting horizontal alignment to right
+plt.subplots_adjust(bottom=0.23)
 plt.show()
 
 # Bar chart comparing average concentration by continent
@@ -168,15 +174,17 @@ avg_concen_by_cont = df.groupby("Continent")["Concentration"].mean()
 x = avg_concen_by_cont.index    # Continents
 y = avg_concen_by_cont.values   # Average concentrations
 
-plt.figure(figsize=(5, 5))
+plt.figure(figsize=(12, 7))
 plt.bar(x, y, color='cornflowerblue')
 plt.title('Average Microplastic Concentration by Continent')
 plt.xlabel('Continent')
 plt.ylabel('Average Concentration (particles/L)')
 plt.xticks(rotation=45)
+plt.subplots_adjust(bottom=0.23)
 plt.show()
 
 # Kernel Density Estimate (KDE) plot/density curve comparing density of concentration in tap vs bottled
+plt.figure(figsize=(12, 7))
 sns.kdeplot(df[df["Source"] == "tap water"]["Concentration"], label="Tap Water", fill=True)
 sns.kdeplot(df[df["Source"] == "bottled water"]["Concentration"], label="Bottled Water", fill=True)
 plt.title("Density Curve of Microplastic Concentration")
