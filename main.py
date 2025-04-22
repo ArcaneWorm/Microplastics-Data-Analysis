@@ -8,6 +8,8 @@ import pycountry_convert as pc
 # Microplastics Data Analysis
 # By Scott Baroni and Landon Escorcio at Cal State Polytechnic - Pomona
 
+ms = time.time()
+
 country_fixes = {               # So that pycountry_convert doesn't mark these countries as Unknown
     "UK": "United Kingdom",
     "Scotland": "United Kingdom",
@@ -37,7 +39,7 @@ def get_continent(country_name):
         print("Unknown: ",country_name)
         return "Unknown"
 
-ms = time.time()
+
 # Use only columns we need
 df = pd.read_csv("samples_geocoded.csv", usecols=["Sample_ID","Location","Countries","Source","Concentration","Concentration_Units"])
 
@@ -134,6 +136,8 @@ print("In seconds:",n)
 x = ['Tap Water', 'Bottled Water']
 y = [tap_avg, bottled_avg]
 
+plt.rcParams.update({'font.size': 20})
+
 plt.figure(figsize=(12, 7))
 plt.bar(x, y, color=['skyblue', 'cornflowerblue'])
 plt.title('Average Microplastic Concentration in Drinking Water')
@@ -164,7 +168,7 @@ plt.bar(x, y, color='cornflowerblue')   # TODO Discuss color choices :)
 plt.title('Countries and Concentration')
 plt.xlabel('Country')
 plt.ylabel('Concentration (particles/Liter)')
-plt.xticks(rotation=45, ha="right") # Make country names readable by rotating 45 degrees and setting horizontal alignment to right
+plt.xticks(rotation=45, ha="right", fontsize=12) # Make country names readable by rotating 45 degrees and setting horizontal alignment to right
 plt.subplots_adjust(bottom=0.23)
 plt.show()
 
@@ -179,7 +183,7 @@ plt.bar(x, y, color='cornflowerblue')
 plt.title('Average Microplastic Concentration by Continent')
 plt.xlabel('Continent')
 plt.ylabel('Average Concentration (particles/L)')
-plt.xticks(rotation=45)
+plt.xticks(rotation=45, fontsize=12)
 plt.subplots_adjust(bottom=0.23)
 plt.show()
 
