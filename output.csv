@@ -1,5 +1,5 @@
-Sample_ID,Location,Countries,Source,Concentration,Concentration_Units,Continent
-1|10.1016/j.watres.2017.11.011,Germany,Germany,bottled water,3.0786325577727995e-173,particles/L,Europe
+Sample_ID,Location,Countries,Source,Concentration,Concentration_Units,Continents
+1|10.1016/j.watres.2017.11.011,Germany,Germany,bottled water,3.0786325577727995e-182,particles/L,Europe
 2|10.1016/j.watres.2017.11.011,Germany,Germany,bottled water,118.0,particles/L,Europe
 3|10.1016/j.watres.2017.11.011,Germany,Germany,bottled water,50.0,particles/L,Europe
 4|10.1016/j.watres.2017.11.011,Germany,Germany,bottled water,11.0,particles/L,Europe
@@ -12,14 +12,12 @@ P18NOV17CG3|10.3389/fchem.2018.00407,"Nairobi, Kenya",Kenya,bottled water,74.6,p
 PRD 05 24 17 11:29|10.3389/fchem.2018.00407,"Fredonia, NY, USA",USA,bottled water,58.2,particles/L,North America
 FAB: 211017 09:06SP|10.3389/fchem.2018.00407,"Sao Paulo, Brazil",Brazil,bottled water,40.1,particles/L,South America
 FAB: 160817 15:05SP|10.3389/fchem.2018.00407,"Aparecida de Goiania, Brazil",Brazil,bottled water,12.5,particles/L,South America
-FAB: 091217 16:53SP|10.3389/fchem.2018.00407,"Rio de Janerio, Brazil",Brazil,bottled water,150.0,particles/L,South America
 P: 4/11/17 03:34 AZ|10.3389/fchem.2018.00407,"Beirut, Lebanon",Lebanon,bottled water,49.3,particles/L,Asia
-20171102 1214JN|10.3389/fchem.2018.00407,"Jinan, China",China,bottled water,156.0,particles/L,Asia
 20171021 3214GH|10.3389/fchem.2018.00407,"Beijing, China",China,bottled water,66.7,particles/L,Asia
 20171103 2106WF|10.3389/fchem.2018.00407,"Qingdao, China",China,bottled water,67.1,particles/L,Asia
 Tap Water_Cuba|10.1371/journal.pone.0194970,"Havana, Cuba",Cuba,tap water,7.17,particles/L,North America
 Tap Water_Ecuador|10.1371/journal.pone.0194970,"Quito, Ecuador",Ecuador,tap water,4.02,particles/L,South America
-Tap Water_England|10.1371/journal.pone.0194970,"London, England",England,tap water,7.73,particles/L,Europe
+Tap Water_England|10.1371/journal.pone.0194970,"London, England",UK,tap water,7.73,particles/L,Europe
 Tap Water_France|10.1371/journal.pone.0194970,"Paris, France",France,tap water,1.82,particles/L,Europe
 Tap Water_Germany|10.1371/journal.pone.0194970,"Berlin, Germany; Tubingen, Germany",Germany,tap water,0.91,particles/L,Europe
 Tap Water_India|10.1371/journal.pone.0194970,"Ner Delhi, India",India,tap water,6.24,particles/L,Asia
@@ -97,7 +95,6 @@ B3|10.18520/cs/v117/i11/1874-1879,"Chennai, India",India,tap water,5.0,particles
 B4|10.18520/cs/v117/i11/1874-1879,"Chennai, India",India,tap water,5.0,particles/L,Asia
 B5|10.18520/cs/v117/i11/1874-1879,"Chennai, India",India,tap water,2.0,particles/L,Asia
 Czech_Milence_DWTP|10.11001/jksww.2020.34.5.357,Czech Republic,Czech Republic,tap water,14.0,particles/L,Europe
-Czech_Plzen_DWTP|10.11001/jksww.2020.34.5.357,Czech Republic,Czech Republic,tap water,151.0,particles/L,Europe
 France|10.1016/j.cej.2020.128381,France,France,tap water,32.0,particles/L,Europe
 Finland|10.1016/j.cej.2020.128381,Finland,Finland,tap water,1.0,particles/L,Europe
 Finland|10.1016/j.cej.2020.128381,Finland,Finland,tap water,0.4,particles/L,Europe
@@ -171,7 +168,6 @@ others|10.1016/j.envpol.2021.117524,Warnow river,Germany,tap water,0.0,particles
 42|10.1016/j.envpol.2020.114227,"Mexico City, Mexico",Mexico,tap water,91.0,particles/L,North America
 1|10.1007/s11356-021-12467-y,"Baden-Wurttemberg, Germany",Germany,tap water,66.0,particles/L,Europe
 drinking_water|10.3390/w12113115,"Sinos River Basin, Rio Grande, Brazil",Brazil,tap water,105.8,particles/L,South America
-Pivokonsky2|10.1016/j.cotox.2021.09.003,"Reservoir Water, Czech Republic",Czech Republic,tap water,151.0,particles/L,Europe
 Lao Shann|10.1016/j.jwpe.2020.101884,China,China,bottled water,5.0,particles/L,Asia
 VOSS|10.1016/j.jwpe.2020.101884,China,China,bottled water,17.0,particles/L,Asia
 Master_kong|10.1016/j.jwpe.2020.101884,China,China,bottled water,18.0,particles/L,Asia
@@ -287,9 +283,8 @@ Netherlands5|10.3390/app112110109,Netherlands,Netherlands,tap water,56.0,particl
 Netherlands6|10.3390/app112110109,Netherlands,Netherlands,tap water,55.0,particles/L,Europe
 Netherlands7|10.3390/app112110109,Netherlands,Netherlands,tap water,55.0,particles/L,Europe
 Poland1|10.3390/app112110109,Poland,Poland,tap water,0.34,particles/L,Europe
-Russia1|10.3390/app112110109,Russia,Russia,tap water,148.0,particles/L,Europe
-Scotland1|10.3390/app112110109,Scotland,Scotland,tap water,0.25,particles/L,Europe
-Scotland2|10.3390/app112110109,Scotland,Scotland,tap water,1.0,particles/L,Europe
+Scotland1|10.3390/app112110109,Scotland,UK,tap water,0.25,particles/L,Europe
+Scotland2|10.3390/app112110109,Scotland,UK,tap water,1.0,particles/L,Europe
 SouthKorea1|10.3390/app112110109,South Korea,South Korea,tap water,49.0,particles/L,Asia
 SouthKorea2|10.3390/app112110109,South Korea,South Korea,tap water,33.0,particles/L,Asia
 SouthKorea4|10.3390/app112110109,South Korea,South Korea,tap water,66.0,particles/L,Asia
@@ -300,7 +295,6 @@ Spain4|10.3390/app112110109,Spain,Spain,tap water,1.08,particles/L,Europe
 Spain5|10.3390/app112110109,Spain,Spain,tap water,12.8,particles/L,Europe
 Spain6|10.3390/app112110109,Spain,Spain,tap water,41.77,particles/L,Europe
 Spain7|10.3390/app112110109,Spain,Spain,tap water,16.4,particles/L,Europe
-Spain8|10.3390/app112110109,Spain,Spain,tap water,131.36,particles/L,Europe
 Spain9|10.3390/app112110109,Spain,Spain,tap water,0.98,particles/L,Europe
 Sweden1|10.3390/app112110109,Sweden,Sweden,tap water,4.0,particles/L,Europe
 Sweden2|10.3390/app112110109,Sweden,Sweden,tap water,0.008,particles/L,Europe
@@ -328,8 +322,36 @@ USA9|10.3390/app112110109,USA,USA,tap water,0.00088,particles/L,North America
 Milence|10.1016/j.scitotenv.2020.140236,"Uhlava River, Czech Republic",Czech Republic,tap water,2.8,particles/L,Europe
 Milence|10.1016/j.scitotenv.2020.140236,"Uhlava River, Czech Republic",Czech Republic,tap water,17.0,particles/L,Europe
 Plzen|10.1016/j.scitotenv.2020.140236,"Uhlava River, Czech Republic",Czech Republic,tap water,12.0,particles/L,Europe
-A|10.1016/j.chemosphere.2020.126493,China,China,tap water,125.0,particles/L,Asia
 A|10.1016/j.chemosphere.2020.126493,China,China,tap water,0.0,particles/L,Asia
-A|10.1016/j.chemosphere.2020.126493,China,China,tap water,125.0,particles/L,Asia
 A|10.1016/j.chemosphere.2020.126493,China,China,tap water,0.0,particles/L,Asia
 1|10.1016/j.scitotenv.2022.154015,South Korea,South Korea,tap water,0.2,particles/L,Asia
+,"Gauteng, South Africa",South Africa,tap water,23.0,particles/L,Africa
+,"Gauteng, South Africa",South Africa,tap water,16.0,particles/L,Africa
+,"Gauteng, South Africa",South Africa,tap water,17.0,particles/L,Africa
+,"Gauteng, South Africa",South Africa,tap water,31.0,particles/L,Africa
+,"Gauteng, South Africa",South Africa,tap water,18.0,particles/L,Africa
+,"Gauteng, South Africa",South Africa,tap water,20.0,particles/L,Africa
+,"Gauteng, South Africa",South Africa,tap water,15.0,particles/L,Africa
+,"Gauteng, South Africa",South Africa,tap water,12.0,particles/L,Africa
+,"Gauteng, South Africa",South Africa,tap water,14.0,particles/L,Africa
+,"Gauteng, South Africa",South Africa,tap water,9.0,particles/L,Africa
+,"Gauteng, South Africa",South Africa,tap water,14.0,particles/L,Africa
+,"Gauteng, South Africa",South Africa,tap water,4.7,particles/L,Africa
+,"Gauteng, South Africa",South Africa,tap water,9.7,particles/L,Africa
+,"Gauteng, South Africa",South Africa,tap water,15.0,particles/L,Africa
+,"Gauteng, South Africa",South Africa,tap water,14.0,particles/L,Africa
+,"Gauteng, South Africa",South Africa,tap water,16.0,particles/L,Africa
+,"Gauteng, South Africa",South Africa,tap water,5.0,particles/L,Africa
+,"Gauteng, South Africa",South Africa,tap water,10.0,particles/L,Africa
+,"Gauteng, South Africa",South Africa,tap water,8.7,particles/L,Africa
+,"Gauteng, South Africa",South Africa,tap water,9.0,particles/L,Africa
+,"Gauteng, South Africa",South Africa,tap water,8.0,particles/L,Africa
+,"Gauteng, South Africa",South Africa,tap water,16.0,particles/L,Africa
+,"Gauteng, South Africa",South Africa,tap water,20.0,particles/L,Africa
+,"Gauteng, South Africa",South Africa,tap water,15.0,particles/L,Africa
+,"Gauteng, South Africa",South Africa,tap water,8.0,particles/L,Africa
+,"Gauteng, South Africa",South Africa,tap water,13.0,particles/L,Africa
+,"Gauteng, South Africa",South Africa,tap water,12.0,particles/L,Africa
+,"Gauteng, South Africa",South Africa,tap water,11.0,particles/L,Africa
+,"Gauteng, South Africa",South Africa,tap water,8.7,particles/L,Africa
+,"Gauteng, South Africa",South Africa,tap water,18.0,particles/L,Africa
