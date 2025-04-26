@@ -1,12 +1,12 @@
 import pandas as pd
-import time
 import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
+import time
 import pycountry_convert as pc
 
 # Microplastics Data Analysis
-# By Scott Baroni and Landon Escorcio at Cal State Polytechnic - Pomona
+# By Scott Baroni and Landon Escorcio at Cal State Polytechnic Univ - Pomona
 
 ms = time.time()
 
@@ -39,27 +39,57 @@ def get_continent(country_name):
         print("Unknown: ",country_name)
         return "Unknown"
 
+<<<<<<< HEAD
 
+=======
+ms = time.time()
+
+# ===========================
+# BASE CLEANING & STRUCTURING
+# ===========================
+>>>>>>> d69832bcceef423608c87e5349ea84a9fd949079
 # Use only columns we need
 df = pd.read_csv("samples_geocoded.csv", usecols=["Sample_ID","Location","Countries","Source","Concentration","Concentration_Units"])
 
-# Remove NA values
-df.dropna(axis=0, subset=["Countries", "Concentration", "Source"], how="any", inplace=True)
+# Remove rows with certain NaN values
+df.dropna(axis=0, subset=["Countries", "Concentration", "Source", "Concentration_Units"], how="any", inplace=True)
 
-# Create continent column
-df["Continent"] = df["Countries"].apply(get_continent)
+# Group United Kingdom regions into UK category for sake of consistency and clearer analysis
+df["Countries"] = df["Countries"].replace({
+    "England": "UK",
+    "Scotland": "UK",
+    "Wales": "UK",
+    "Northern Ireland": "UK"
+})
 
-df.info() # Info about dataframe
-print()
+# ===========================
+# DATA IMPUTATION
+# ===========================
+# Impute more MP concentration data for Africa
+df_to_impute = pd.read_csv("SouthAfricaWaterMP.csv", usecols=["Concentration (particles/L)"])
+df_to_impute.rename(columns={"Concentration (particles/L)": "Concentration"}, inplace=True)
 
+# Add required columns
+df_to_impute["Sample_ID"] = None
+df_to_impute["Location"] = "Gauteng, South Africa"
+df_to_impute["Countries"] = "South Africa"
+df_to_impute["Source"] = "tap water"
+df_to_impute["Concentration_Units"] = "particles/L"
+
+df.to_csv("output2.csv",index=False)
+# Concatenate to original dataframe
+df = pd.concat([df, df_to_impute], ignore_index=True)
+
+# Create continents column
+df["Continents"] = df["Countries"].apply(get_continent)
+
+# ===========================
+# STRUCTURING UNITS
+# ===========================
 # Convert 'Concentration' column to numeric (in order to remove those that are not a number)
 df["Concentration"] = pd.to_numeric(df["Concentration"], errors="coerce")
 
-# Drop rows where 'Concentration' is NaN
-df = df.dropna(subset=["Concentration"])
-
 # Drop rows where Concentration_Units is not in particles/volume
-# TODO Discuss whether this is the right option.
 df = df[~df["Concentration_Units"].isin(["ug/m3", "ug/g"])]
 
 i = 0
@@ -67,7 +97,7 @@ concentrations = df["Concentration"].to_list()
 sources=df["Source"].to_list()
 bottled_avg=0
 tap_avg=0
-# Unit Conversions TODO Verify
+# Unit Conversions
 for x in df["Concentration_Units"].to_list():
     if x == "particles/0.33L":
         concentrations[i] = concentrations[i]*3
@@ -80,21 +110,15 @@ for x in df["Concentration_Units"].to_list():
     elif x == "particles/bottle":
         # Assuming an average bottle holds around .5 liter
         concentrations[i] = concentrations[i]*2
-    
-    # # Add to averages for bar charts      # Opted for method .mean() to find avg TODO Discuss if valid
-    # if sources[i] == "bottled water":
-    #     bottled_avg+=concentrations[i]
-    # else:
-    #     tap_avg+=concentrations[i]
-    # i+=1
 
 # Replace with new converted units, all now in particles/L
 df["Concentration"] = concentrations
 df["Concentration_Units"] = "particles/L"
 
-
+# ===========================
+# HANDLING OUTLIERS
+# ===========================
 # Drop major outliers in concentration using IQR
-# TODO Discuss if this is reasonable
 Q1 = df["Concentration"].quantile(0.25)
 Q3 = df["Concentration"].quantile(0.75)
 IQR = Q3 - Q1
@@ -102,16 +126,31 @@ IQR = Q3 - Q1
 # Bounds for outliers
 lower_bound = Q1 - 1.5 * IQR
 upper_bound = Q3 + 1.5 * IQR
-intial_rows = len(df)
+initial_rows = len(df)
 
 df = df[(df["Concentration"] >= lower_bound) & (df["Concentration"] <= upper_bound)]
 
 # Check how many rows were removed
-print(f"Outlier rows removed: {intial_rows - len(df)}")
+print(f"Outlier rows removed: {initial_rows - len(df)}")
 print(f"Remaining rows: {len(df)}")
+df.info()
 print()
 
+# ===========================
+# CLEANED DATA & SKEWNESS
+# ===========================
+# Create/update csv for cleaned up data
+df.to_csv("output.csv",index=False)
 
+# Find skewness of tap and bottled water
+tap_skew = df[df["Source"] == "tap water"]["Concentration"].skew()
+bottled_skew = df[df["Source"] == "bottled water"]["Concentration"].skew()
+print(f"Tap water skew: {tap_skew:.4f}")
+print(f"Bottled water skew: {bottled_skew:.4f}")
+
+# ===========================
+# VISUALIZATIONS
+# ===========================
 # Averages for bottled and tap concentrations
 # Filter only water data
 df_tap = df[df["Source"] == "tap water"]
@@ -129,9 +168,6 @@ print()
 n = (time.time() - ms)
 print("In seconds:",n)
 
-# Create/update csv for cleaned up data
-# df.to_csv("output.csv",index=False)
-
 # Bar chart comparing bottled vs tap water
 x = ['Tap Water', 'Bottled Water']
 y = [tap_avg, bottled_avg]
@@ -146,7 +182,6 @@ plt.ylabel('Concentration (particles/L)')
 plt.show()
 
 # Bar chart with error bars (based on standard deviation) to represent uncertainty
-# TODO Discuss if this is preferred over previous bar chart
 std_concentration = df.groupby("Source")["Concentration"].std()
 plt.figure(figsize=(12, 7))
 plt.bar(x, y, yerr=std_concentration, capsize=5, color=['skyblue', 'cornflowerblue'])
@@ -156,15 +191,13 @@ plt.ylabel('Concentration (particles/L)')
 plt.show()
 
 # Bar chart comparing countries and average concentration
-# Filter out entries with only 'UK' as country TODO Discuss any alternative solutions
-df_filtered = df[df["Countries"] != "UK"]
 # Group data by country and calculate average concentration
-avg_concen_by_country = df_filtered.groupby("Countries")["Concentration"].mean()
+avg_concen_by_country = df.groupby("Countries")["Concentration"].mean()
 x = avg_concen_by_country.index     # Countries
 y = avg_concen_by_country.values    # Average concentrations
 
 plt.figure(figsize=(12, 7))
-plt.bar(x, y, color='cornflowerblue')   # TODO Discuss color choices :)
+plt.bar(x, y, color='cornflowerblue')
 plt.title('Countries and Concentration')
 plt.xlabel('Country')
 plt.ylabel('Concentration (particles/Liter)')
@@ -173,8 +206,7 @@ plt.subplots_adjust(bottom=0.23)
 plt.show()
 
 # Bar chart comparing average concentration by continent
-# TODO Discuss if this is a useful visualization
-avg_concen_by_cont = df.groupby("Continent")["Concentration"].mean()
+avg_concen_by_cont = df.groupby("Continents")["Concentration"].mean()
 x = avg_concen_by_cont.index    # Continents
 y = avg_concen_by_cont.values   # Average concentrations
 
