@@ -1,3 +1,12 @@
+# ===========================
+# SETUP
+# ===========================
+
+# The imports are pretty standard for data analysis. 
+# We also included time so we could have some runtime complexity
+# data and make sure nothing strange was happening with
+# the calculations.
+
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -5,19 +14,26 @@ import numpy as np
 import time
 import pycountry_convert as pc
 
-# Microplastics Data Analysis
-# By Scott Baroni and Landon Escorcio at Cal State Polytechnic Univ - Pomona
+# Microplastics Data Analysis on GitHub (for collaboration)
+# By Scott Baroni and Landon Escorcio 
+# at Cal State Polytechnic University - Pomona
 
 ms = time.time()
 
-country_fixes = {               # So that pycountry_convert doesn't mark these countries as Unknown
+# This line fixes an error with pycountry_convert which
+# would mark these countries as Unknown
+country_fixes = {           
     "UK": "United Kingdom",
     "Scotland": "United Kingdom",
     "England": "United Kingdom",
     "Korea": "South Korea",
 }
 
-# Convert countries to continent for additional column
+# Grouping countries by continent for an 
+# additional, broader column.
+
+# Our code also includes error handling as is good practice
+# for professional programming
 def get_continent(country_name):
     try:
         # Make any fixes
@@ -39,22 +55,15 @@ def get_continent(country_name):
         print("Unknown: ",country_name)
         return "Unknown"
 
-<<<<<<< HEAD
-
-=======
-ms = time.time()
-
-# ===========================
-# BASE CLEANING & STRUCTURING
-# ===========================
->>>>>>> d69832bcceef423608c87e5349ea84a9fd949079
-# Use only columns we need
+# Reading in only columns we need from the orgiginal dataset.
+# Important columns include Location, Concentration, and Units.
 df = pd.read_csv("samples_geocoded.csv", usecols=["Sample_ID","Location","Countries","Source","Concentration","Concentration_Units"])
 
-# Remove rows with certain NaN values
+# Remove rows with NaN values
 df.dropna(axis=0, subset=["Countries", "Concentration", "Source", "Concentration_Units"], how="any", inplace=True)
 
-# Group United Kingdom regions into UK category for sake of consistency and clearer analysis
+# Group United Kingdom regions into UK category for 
+# sake of consistency and clearer analysis
 df["Countries"] = df["Countries"].replace({
     "England": "UK",
     "Scotland": "UK",
@@ -65,11 +74,16 @@ df["Countries"] = df["Countries"].replace({
 # ===========================
 # DATA IMPUTATION
 # ===========================
-# Impute more MP concentration data for Africa
+# Impute more MP concentration data for Africa.
+
+# Africa did not have enough datapoints originally,
+# Which we solved by adding from another dataset.
+# This turned out to be worthwhile. Some visualizations changed
+# and became more accurate as a result of this change.
 df_to_impute = pd.read_csv("SouthAfricaWaterMP.csv", usecols=["Concentration (particles/L)"])
 df_to_impute.rename(columns={"Concentration (particles/L)": "Concentration"}, inplace=True)
 
-# Add required columns
+# In order to add the data, we added required columns.
 df_to_impute["Sample_ID"] = None
 df_to_impute["Location"] = "Gauteng, South Africa"
 df_to_impute["Countries"] = "South Africa"
@@ -77,19 +91,23 @@ df_to_impute["Source"] = "tap water"
 df_to_impute["Concentration_Units"] = "particles/L"
 
 df.to_csv("output2.csv",index=False)
-# Concatenate to original dataframe
+# Then, concatenated to original dataframe.
 df = pd.concat([df, df_to_impute], ignore_index=True)
 
-# Create continents column
+# Create continents column.
 df["Continents"] = df["Countries"].apply(get_continent)
 
 # ===========================
 # STRUCTURING UNITS
 # ===========================
-# Convert 'Concentration' column to numeric (in order to remove those that are not a number)
+# Converted 'Concentration' column to numeric 
+# (in order to remove those that are not a number)
 df["Concentration"] = pd.to_numeric(df["Concentration"], errors="coerce")
 
 # Drop rows where Concentration_Units is not in particles/volume
+# For example, it seems that ug refers to "micrograms".
+# It was not clear how this measurement compares to our definition
+# of a single "particle", so these rows were removed.
 df = df[~df["Concentration_Units"].isin(["ug/m3", "ug/g"])]
 
 i = 0
@@ -97,7 +115,10 @@ concentrations = df["Concentration"].to_list()
 sources=df["Source"].to_list()
 bottled_avg=0
 tap_avg=0
-# Unit Conversions
+# Manual Unit Conversions
+# We used standard lists to convert between units so that
+# verification of the numbers was easier, as opposed to 
+# pandas functions that may have unexpected behavior.
 for x in df["Concentration_Units"].to_list():
     if x == "particles/0.33L":
         concentrations[i] = concentrations[i]*3
@@ -111,26 +132,26 @@ for x in df["Concentration_Units"].to_list():
         # Assuming an average bottle holds around .5 liter
         concentrations[i] = concentrations[i]*2
 
-# Replace with new converted units, all now in particles/L
+# Replaced columns with new converted units, all now in particles/L.
 df["Concentration"] = concentrations
 df["Concentration_Units"] = "particles/L"
 
 # ===========================
 # HANDLING OUTLIERS
 # ===========================
-# Drop major outliers in concentration using IQR
+# Drop major outliers in concentration using the standard IQR method.
 Q1 = df["Concentration"].quantile(0.25)
 Q3 = df["Concentration"].quantile(0.75)
 IQR = Q3 - Q1
 
-# Bounds for outliers
+# Bounds for outliers.
 lower_bound = Q1 - 1.5 * IQR
 upper_bound = Q3 + 1.5 * IQR
 initial_rows = len(df)
 
 df = df[(df["Concentration"] >= lower_bound) & (df["Concentration"] <= upper_bound)]
 
-# Check how many rows were removed
+# Print how many rows were removed.
 print(f"Outlier rows removed: {initial_rows - len(df)}")
 print(f"Remaining rows: {len(df)}")
 df.info()
@@ -139,10 +160,10 @@ print()
 # ===========================
 # CLEANED DATA & SKEWNESS
 # ===========================
-# Create/update csv for cleaned up data
+# Create/update csv for cleaned up data.
 df.to_csv("output.csv",index=False)
 
-# Find skewness of tap and bottled water
+# Find skewness of tap and bottled water.
 tap_skew = df[df["Source"] == "tap water"]["Concentration"].skew()
 bottled_skew = df[df["Source"] == "bottled water"]["Concentration"].skew()
 print(f"Tap water skew: {tap_skew:.4f}")
@@ -151,6 +172,10 @@ print(f"Bottled water skew: {bottled_skew:.4f}")
 # ===========================
 # VISUALIZATIONS
 # ===========================
+# These visualizations use good practice methods, such as colorblind
+# friendly colors, legible font sizes, and barcharts that start from 0.
+# We are now ready to run the code.
+
 # Averages for bottled and tap concentrations
 # Filter only water data
 df_tap = df[df["Source"] == "tap water"]
