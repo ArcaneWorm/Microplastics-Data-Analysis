@@ -1,3 +1,7 @@
+# Microplastics Data Analysis on GitHub (for collaboration)
+# By Scott Baroni and Landon Escorcio 
+# at Cal State Polytechnic University - Pomona
+
 # ===========================
 # SETUP
 # ===========================
@@ -13,10 +17,6 @@ import seaborn as sns
 import numpy as np
 import time
 import pycountry_convert as pc
-
-# Microplastics Data Analysis on GitHub (for collaboration)
-# By Scott Baroni and Landon Escorcio 
-# at Cal State Polytechnic University - Pomona
 
 ms = time.time()
 
@@ -101,7 +101,7 @@ df["Continents"] = df["Countries"].apply(get_continent)
 # STRUCTURING UNITS
 # ===========================
 # Converted 'Concentration' column to numeric 
-# (in order to remove those that are not a number)
+# (in order to remove those values that are not a number)
 df["Concentration"] = pd.to_numeric(df["Concentration"], errors="coerce")
 
 # Drop rows where Concentration_Units is not in particles/volume
@@ -140,6 +140,7 @@ df["Concentration_Units"] = "particles/L"
 # HANDLING OUTLIERS
 # ===========================
 # Drop major outliers in concentration using the standard IQR method.
+# Lower bound should not be reached in practice.
 Q1 = df["Concentration"].quantile(0.25)
 Q3 = df["Concentration"].quantile(0.75)
 IQR = Q3 - Q1
