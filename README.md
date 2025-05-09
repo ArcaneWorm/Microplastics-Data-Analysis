@@ -23,6 +23,10 @@ pip install pandas matplotlib seaborn numpy pycountry-convert
   - Generate cleaned data (`output.csv`)
   - Produce and save figures in your working directory
 
+# Datasets
+* Main dataset: [Microplastics in Drinking Water - California Open Data Portal](https://data.ca.gov/dataset/microplastics-in-drinking-water)
+* Additional dataset: [Detection and characterisation of microplastics in tap water from Gauteng, South Africa](https://www.sciencedirect.com/science/article/pii/S0045653524007963#sec2)
+
 # Authors
 * Scott Baroni  
   - GitHub: [ArcaneWorm](https://github.com/ArcaneWorm)
